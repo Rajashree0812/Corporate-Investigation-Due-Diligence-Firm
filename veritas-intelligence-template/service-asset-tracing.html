@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asset Tracing & Sovereign Asset Recovery — Veritas Intelligence</title>
+  <meta name="description" content="Global asset tracing, nominee shareholding unwrapping, judgment enforcement intelligence, and sovereign asset recovery.">
+  <meta name="keywords" content="corporate investigations, corporate intelligence, forensic due diligence, dispute intelligence, asset tracing">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Asset Tracing & Sovereign Asset Recovery — Veritas Intelligence">
+  <meta property="og:description" content="Global identification, mapping, and strategic freezing support for dissipated corporate capital and hidden offshore assets.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero/hero-asset-tracing.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <script>
+    (function () {
+      const theme = localStorage.getItem('itserve_theme') || localStorage.getItem('itSupportTheme') || localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-bs-theme', theme);
+    const dir = localStorage.getItem('itserve_direction') || localStorage.getItem('itSupportRTL') || 'ltr';
+    document.documentElement.setAttribute('dir', dir);
+    document.documentElement.setAttribute('lang', dir === 'rtl' ? 'ar' : 'en');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-veritas" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar-brand-group d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.svg" data-light-src="assets/images/logo.svg" data-dark-src="assets/images/logo-light.svg" alt="Veritas Intelligence Logo" class="navbar-brand-logo" width="220" height="44">
+          </a>
+          <!-- Mobile Theme & RTL Controls (Visible ONLY when inspect / mobile view < 992px) -->
+          <div class="navbar-controls-group d-flex d-lg-none align-items-center">
+            <!-- Theme Toggle -->
+            <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <!-- RTL Toggle -->
+            <button class="btn-control-toggle btn-rtl-toggle rtl-toggle-btn" type="button" aria-label="Toggle RTL layout" title="Toggle RTL">
+              <span class="rtl-btn-text">RTL</span>
+            </button>
+          </div></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-building me-2 text-gold"></i> Corporate Investigations</a></li>
+                <li><a class="dropdown-item" href="index-2.html"><i class="bi bi-cpu me-2 text-gold"></i> Corporate Intelligence</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i> All Practice Areas</a></li>
+                <li><hr class="dropdown-divider my-1"></li>
+                <li><a class="dropdown-item" href="service-corporate-investigations.html"><i class="bi bi-search me-2 text-gold"></i> Corporate Investigations</a></li>
+                <li><a class="dropdown-item" href="service-executive-screening.html"><i class="bi bi-person-check me-2 text-gold"></i> Executive Screening</a></li>
+                <li><a class="dropdown-item" href="service-ma-due-diligence.html"><i class="bi bi-briefcase me-2 text-gold"></i> M&amp;A Due Diligence</a></li>
+                <li><a class="dropdown-item" href="service-fraud-misconduct.html"><i class="bi bi-file-earmark-lock me-2 text-gold"></i> Fraud &amp; Misconduct</a></li>
+                <li><a class="dropdown-item" href="service-vendor-risk.html"><i class="bi bi-shield-check me-2 text-gold"></i> Vendor Risk Management</a></li>
+                <li><a class="dropdown-item" href="service-corporate-intelligence.html"><i class="bi bi-cpu me-2 text-gold"></i> Corporate Intelligence</a></li>
+                <li><a class="dropdown-item" href="service-litigation-support.html"><i class="bi bi-journal-bookmark me-2 text-gold"></i> Litigation Support</a></li>
+                <li><a class="dropdown-item active" href="service-asset-tracing.html"><i class="bi bi-graph-up-arrow me-2 text-gold"></i> Asset Tracing &amp; Recovery</a></li>
+                <li><a class="dropdown-item" href="service-cyber-investigations.html"><i class="bi bi-shield-lock me-2 text-gold"></i> Cyber Risk &amp; Digital Forensics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Insights <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html"><i class="bi bi-journal-text me-2 text-gold"></i> Intelligence Briefings (Blog)</a></li>
+                <li><a class="dropdown-item" href="blog-details.html"><i class="bi bi-file-text me-2 text-gold"></i> Case Analysis (Blog Details)</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-3 navbar-nav-cta">
+            <!-- Desktop Theme & RTL Controls (Visible ONLY on desktop >= 992px, matching second image) -->
+            <div class="navbar-controls-desktop d-none d-lg-flex align-items-center gap-2">
+              <!-- Theme Toggle -->
+              <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle Theme">
+                <i class="bi bi-moon-stars-fill"></i>
+              </button>
+              <!-- RTL Toggle -->
+              <button class="btn-control-toggle btn-rtl-toggle rtl-toggle-btn" type="button" aria-label="Toggle RTL layout" title="Toggle RTL">
+                <span class="rtl-btn-text">RTL</span>
+              </button>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">
+              <i class="bi bi-lock-fill"></i> Discuss a Case
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Hero Banner -->
+    <section class="page-hero" aria-label="Service details hero">
+      <img src="assets/images/hero/hero-asset-tracing.jpg" alt="Intelligence analysts and international asset recovery specialists mapping offshore corporate structures and real estate registries on digital display" class="page-hero-img" width="3840" height="2160">
+      <div class="container page-hero-content">
+        <span class="badge-gold mb-3">Practice Area Detail</span>
+        <h1>Asset Tracing & Sovereign Asset Recovery</h1>
+        <p class="lead">
+          Global identification, mapping, and strategic freezing support for dissipated corporate capital, concealed real estate portfolios, offshore trust structures, and maritime assets.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Detail Content Layout -->
+    <section class="section-padding" aria-label="Service details overview">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Main Content (Left 8 cols) -->
+          <div class="col-lg-8">
+            <!-- Service Overview -->
+            <div class="mb-5">
+              <h2 class="h3 mb-3">Monetizing Judgments and Uncovering Concealed Wealth</h2>
+              <p class="text-secondary">
+                Securing a multi-million-dollar arbitration award, commercial court judgment, or creditor claim is frequently only the first chapter of a protracted dispute. Sophisticated debtors routinely utilize labyrinthine offshore structures, nominee directors, blind trusts, and friendly sovereign jurisdictions to frustrate enforcement and conceal attachable assets.
+              </p>
+              <p class="text-muted">
+                Veritas Intelligence assists judgment creditors, international law firms, and sovereign states in transforming unenforceable paper judgments into tangible financial recoveries. We map undisclosed asset ownership across real estate, equity shares, maritime vessels, private aviation, and banking corridors to establish legal basis for worldwide freezing orders.
+              </p>
+            </div>
+
+            <!-- Business Challenges Addressed -->
+            <div class="mb-5 p-4 bg-surface border rounded">
+              <h3 class="h4 mb-3">Sophisticated Debtor Strategies Countered</h3>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="d-flex align-items-start gap-2">
+                    <i class="bi bi-exclamation-triangle text-warning fs-5"></i>
+                    <div>
+                      <strong class="d-block small text-dark dark-text-light">Layered Offshore Trusts & Nominee Directors</strong>
+                      <span class="small text-muted">Penetrating secretive corporate registries in jurisdictions such as BVI, Cayman, Panama, and Cyprus to expose true beneficial owners.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-start gap-2">
+                    <i class="bi bi-exclamation-triangle text-warning fs-5"></i>
+                    <div>
+                      <strong class="d-block small text-dark dark-text-light">Concealed Real Estate & Luxury Physical Assets</strong>
+                      <span class="small text-muted">Locating high-value residential and commercial properties, corporate aircraft, and superyachts held through layered holding shells.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-start gap-2">
+                    <i class="bi bi-exclamation-triangle text-warning fs-5"></i>
+                    <div>
+                      <strong class="d-block small text-dark dark-text-light">Pre-Judgment Fraudulent Conveyance & Asset Stripping</strong>
+                      <span class="small text-muted">Establishing documentary proof of emergency transfers made to family members or affiliated entities specifically to evade creditor claims.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-start gap-2">
+                    <i class="bi bi-exclamation-triangle text-warning fs-5"></i>
+                    <div>
+                      <strong class="d-block small text-dark dark-text-light">Cross-Border Sovereign Immunity Barriers</strong>
+                      <span class="small text-muted">Identifying commercial, non-diplomatic assets of state-owned enterprises that are legally eligible for attachment under international law.</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Investigation Workflow (4 Phases) -->
+            <div class="mb-5">
+              <h3 class="h4 mb-4">The Asset Tracing & Enforcement Lifecycle</h3>
+              <div class="row g-4">
+                <div class="col-sm-6">
+                  <div class="p-3 bg-surface border rounded h-100">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <strong class="text-gold">Phase 01</strong>
+                      <span class="badge bg-secondary-subtle text-secondary small">Day 1–3</span>
+                    </div>
+                    <h4 class="h6 mb-2">Judgment Scoping & Target Profiling</h4>
+                    <p class="small text-muted mb-0">Analysis of judgment awards, underlying commercial disputes, known banking corridors, and debtor behavioral profiles across primary jurisdictions.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 bg-surface border rounded h-100">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <strong class="text-gold">Phase 02</strong>
+                      <span class="badge bg-secondary-subtle text-secondary small">Day 4–9</span>
+                    </div>
+                    <h4 class="h6 mb-2">Global Multi-Registry & Title Extraction</h4>
+                    <p class="small text-muted mb-0">Exhaustive retrieval of corporate records, property deeds, maritime vessel registries (IMO tracking), aviation tail number logs, and patent databases.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 bg-surface border rounded h-100">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <strong class="text-gold">Phase 03</strong>
+                      <span class="badge bg-secondary-subtle text-secondary small">Day 10–15</span>
+                    </div>
+                    <h4 class="h6 mb-2">HUMINT & Banking Corridor Elicitation</h4>
+                    <p class="small text-muted mb-0">Discreet source inquiries with industry counterparties, maritime brokers, and commercial lenders to uncover active transaction corridors.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 bg-surface border rounded h-100">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <strong class="text-gold">Phase 04</strong>
+                      <span class="badge bg-secondary-subtle text-secondary small">Day 16</span>
+                    </div>
+                    <h4 class="h6 mb-2">Evidentiary Asset Dossier & Freezing Order Affidavits</h4>
+                    <p class="small text-muted mb-0">Delivery of a comprehensive asset recovery roadmap and sworn expert affidavits structured for immediate submission to commercial courts.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Tangible Deliverables -->
+            <div class="mb-5">
+              <h3 class="h4 mb-3">Tangible Recovery Deliverables</h3>
+              <ul class="list-group list-group-flush border rounded">
+                <li class="list-group-item bg-surface d-flex align-items-start gap-3 p-3">
+                  <i class="bi bi-diagram-3-fill text-gold fs-4"></i>
+                  <div>
+                    <strong class="d-block">Global Asset Mapping Dossier & Schematics</strong>
+                    <span class="small text-muted">Visual relational charts linking the debtor to verified real estate, corporate equities, maritime vessels, and bank conduits globally.</span>
+                  </div>
+                </li>
+                <li class="list-group-item bg-surface d-flex align-items-start gap-3 p-3">
+                  <i class="bi bi-file-earmark-lock-fill text-gold fs-4"></i>
+                  <div>
+                    <strong class="d-block">Trial-Ready Affidavit in Support of Injunctions</strong>
+                    <span class="small text-muted">Meticulously referenced sworn evidence statements engineered to satisfy legal thresholds for Worldwide Freezing Orders (WFOs) and Mareva injunctions.</span>
+                  </div>
+                </li>
+                <li class="list-group-item bg-surface d-flex align-items-start gap-3 p-3">
+                  <i class="bi bi-compass-fill text-gold fs-4"></i>
+                  <div>
+                    <strong class="d-block">Multi-Jurisdiction Enforcement Strategy Memo</strong>
+                    <span class="small text-muted">Strategic guidance detailing which sovereign venues offer the fastest, most cost-effective legal mechanisms for asset seizure and liquidation.</span>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- Jurisdictional & Regulatory Standards Callout -->
+            <div class="mb-5 p-4 rounded border-start border-4 border-gold bg-surface">
+              <h4 class="h5 mb-2"><i class="bi bi-shield-check text-gold me-2"></i>Worldwide Freezing Orders & Admissibility</h4>
+              <p class="small text-muted mb-0">
+                All intelligence is obtained through lawful, defensible investigative methodologies that comply with domestic and international privacy legislation. Our findings are structured to support Norwich Pharmacal disclosure orders, Bankers Trust orders, and Section 1782 US discovery applications without compromising cross-border legal privilege.
+              </p>
+            </div>
+
+            <!-- FAQs Accordion -->
+            <div class="mb-4">
+              <h3 class="h4 mb-4">Frequently Asked Questions</h3>
+              <div class="accordion accordion-veritas" id="faqAccordionService">
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="heading1">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      How do you trace assets hidden in offshore secrecy havens?
+                    </button>
+                  </h4>
+                  <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faqAccordionService">
+                    <div class="accordion-body">
+                      We combine historic registry filings, corporate director cross-matches, banking documentation from public dockets, and verified on-the-ground source elicitation to pierce secrecy laws legally.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                      Does Veritas directly seize assets on behalf of clients?
+                    </button>
+                  </h4>
+                  <div id="collapse2" class="accordion-collapse collapse " aria-labelledby="heading2" data-bs-parent="#faqAccordionService">
+                    <div class="accordion-body">
+                      We work in direct partnership with your litigation counsel. Veritas provides the verified evidentiary dossier, affidavits, and asset location proof required for court-appointed receivers and bailiffs to execute seizures.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h4 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                      What is the threshold value of judgments suitable for tracing?
+                    </button>
+                  </h4>
+                  <div id="collapse3" class="accordion-collapse collapse " aria-labelledby="heading3" data-bs-parent="#faqAccordionService">
+                    <div class="accordion-body">
+                      We typically handle judgment enforcement and asset recovery matters where the dispute value ranges from $5M to over $1B across multinational jurisdictions.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar (Right 4 cols) -->
+          <div class="col-lg-4">
+            <div class="sidebar-sticky-wrap">
+              <!-- Indicative Engagement Options Card -->
+              <div class="card-veritas p-4 mb-4">
+                <span class="badge-gold mb-2">Indicative Scope</span>
+                <h3 class="h5 mb-3">Engagement Options</h3>
+                <div class="p-3 bg-surface border rounded mb-3">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <strong class="small ">Level 1: Asset Feasibility & Viability Scan</strong>
+                    <span class="badge bg-secondary-subtle text-secondary small">5–7 Days</span>
+                  </div>
+                  <p class="small text-muted mb-0">Preliminary registry scrub and debtor asset footprint assessment.</p>
+                </div>
+                <div class="p-3 bg-surface border rounded mb-3">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <strong class="small text-gold">Level 2: Comprehensive Multi-Jurisdiction Tracing</strong>
+                    <span class="badge bg-warning-subtle text-warning small">10–14 Days</span>
+                  </div>
+                  <p class="small text-muted mb-0">Deep offshore unwrapping, property mapping, and source inquiries.</p>
+                </div>
+                <div class="p-3 bg-surface border rounded mb-3">
+                  <div class="d-flex justify-content-between align-items-center mb-1">
+                    <strong class="small ">Level 3: Full Enforcement & Freezing Campaign</strong>
+                    <span class="badge bg-secondary-subtle text-secondary small">Phased / Retainer</span>
+                  </div>
+                  <p class="small text-muted mb-0">Continuous asset surveillance, expert court affidavits, and seizure support.</p>
+                </div>
+
+                <small class="d-block text-muted mb-3 fst-italic">Note: Success-oriented hybrid fee structures and phased scoping retainers available for qualifying high-value commercial judgments.</small>
+                
+                <a href="contact.html" class="btn btn-gold w-100">
+                  <i class="bi bi-chat-left-dots-fill"></i> Request a Scoping Quote
+                </a>
+              </div>
+
+              <!-- Related Practice Areas -->
+              <div class="card-veritas p-4 mb-4">
+                <h3 class="h6 text-uppercase tracking-wider mb-3">Related Practice Areas</h3>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-2 pb-2 border-bottom">
+                    <a href="service-fraud-misconduct.html" class="text-decoration-none d-flex justify-content-between align-items-center">
+                      <span class="small text-secondary">Fraud & Misconduct</span>
+                      <i class="bi bi-chevron-right text-muted small"></i>
+                    </a>
+                  </li>
+                  <li class="mb-2 pb-2 border-bottom">
+                    <a href="service-corporate-investigations.html" class="text-decoration-none d-flex justify-content-between align-items-center">
+                      <span class="small text-secondary">Corporate Investigations</span>
+                      <i class="bi bi-chevron-right text-muted small"></i>
+                    </a>
+                  </li>
+                  <li class="mb-2 pb-2 border-bottom">
+                    <a href="service-ma-due-diligence.html" class="text-decoration-none d-flex justify-content-between align-items-center">
+                      <span class="small text-secondary">M&A Due Diligence</span>
+                      <i class="bi bi-chevron-right text-muted small"></i>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="service-executive-screening.html" class="text-decoration-none d-flex justify-content-between align-items-center">
+                      <span class="small text-secondary">Executive Screening</span>
+                      <i class="bi bi-chevron-right text-muted small"></i>
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+
+              <!-- Confidential Hotline Card -->
+              <div class="p-4 bg-navy-dark text-white rounded border border-gold" style="background-color: var(--navy-900);">
+                <div class="d-flex align-items-center gap-2 mb-2 text-gold">
+                  <i class="bi bi-lock-fill"></i>
+                  <span class="small fw-bold text-uppercase">Direct Partner Intake</span>
+                </div>
+                <h4 class="h6 text-white mb-2">Confidential Consultation</h4>
+                <p class="small text-slate-300 mb-3 opacity-75">
+                  Speak directly with a senior investigation partner under mutual NDA.
+                </p>
+                <a href="tel:+442079460912" class="btn btn-sm btn-outline-gold w-100">
+                  <i class="bi bi-telephone me-1"></i> +44 20 7946 0912
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Spotlight Card -->
+    <section class="section-padding-sm bg-surface border-top" aria-label="Consultation callout">
+      <div class="container">
+        <div class="cta-spotlight-card">
+          <div class="row align-items-stretch g-4 g-lg-5">
+            <div class="col-lg-6">
+              <div class="cta-spotlight-content">
+                <span class="cta-pill-badge mb-3"><i class="bi bi-briefcase-fill"></i> Judgment Enforcement</span>
+                <h2 class="cta-spotlight-title mb-3">Transform Unenforceable Paper into Recovered Capital</h2>
+                <p class="cta-spotlight-desc mb-4">
+                  Consult with our cross-border asset recovery partners to map debtor assets and build a court-admissible strategy for worldwide freezing orders.
+                </p>
+                <div class="cta-spotlight-metrics mb-4">
+                  <div class="cta-metric-item">
+                    <span class="cta-metric-label">Sovereign Reach</span>
+                    <strong class="cta-metric-value">140+ Jurisdictions</strong>
+                  </div>
+                  <div class="cta-metric-item">
+                    <span class="cta-metric-label">Court Proven</span>
+                    <strong class="cta-metric-value">Mareva / WFO Affidavits</strong>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="contact.html" class="btn btn-gold btn-lg">
+                    <i class="bi bi-shield-lock-fill"></i> Initiate Asset Recovery
+                  </a>
+                  <a href="pricing.html" class="btn btn-outline-white btn-lg btn-white">
+                    <i class="bi bi-wallet2"></i> Engagement Pricing
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 cta-spotlight-img-col">
+              <div class="cta-spotlight-img-wrap">
+                <img src="assets/images/banners/banner-asset-tracing.jpg" alt="International judgment enforcement partners examining asset recovery mapping charts and freezing orders in executive suite" class="cta-spotlight-img" width="3840" height="2880" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer-veritas" aria-label="Global footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="navbar-brand footer-brand d-inline-block mb-3" aria-label="Veritas Intelligence Home">
+            <img src="assets/images/logo.svg" data-light-src="assets/images/logo.svg" data-dark-src="assets/images/logo-light.svg" alt="Veritas Intelligence Logo" class="navbar-brand-logo footer-brand-logo" width="220" height="44">
+          </a>
+          <p class="footer-brand-desc">
+            Veritas Intelligence is an international corporate investigation, forensic intelligence, and due diligence consultancy advising corporate leadership, boards of directors, and global legal counsel.
+          </p>
+          <div class="d-flex gap-2">
+            <span class="badge bg-dark border border-secondary text-light small"><i class="bi bi-shield-check text-gold"></i> ISO 27001 Certified Protocols</span>
+          </div>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="LinkedIn" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="X (formerly Twitter)" title="X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="YouTube" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="mailto:inquiries@veritasintelligence.com" class="btn-social" aria-label="Confidential Email" title="Confidential Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Practice Areas</h4>
+          <ul class="footer-links">
+            <li><a href="service-corporate-investigations.html">Corporate Investigations</a></li>
+            <li><a href="service-executive-screening.html">Executive Screening</a></li>
+            <li><a href="service-ma-due-diligence.html">M&amp;A Due Diligence</a></li>
+            <li><a href="service-fraud-misconduct.html">Fraud &amp; Forensics</a></li>
+            <li><a href="service-vendor-risk.html">Vendor Risk Management</a></li>
+            <li><a href="service-corporate-intelligence.html">Corporate Intelligence</a></li>
+            <li><a href="service-litigation-support.html">Litigation Support</a></li>
+            <li><a href="service-asset-tracing.html">Asset Tracing</a></li>
+            <li><a href="service-cyber-investigations.html">Cyber Forensics</a></li>
+            <li><a href="services.html">All Practice Areas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Veritas</a></li>
+            <li><a href="about.html#team">Leadership Team</a></li>
+            <li><a href="about.html#methodology">Our Methodology</a></li>
+            <li><a href="pricing.html">Engagement Models</a></li>
+            <li><a href="blog.html">Intelligence Briefings</a></li>
+            <li><a href="contact.html">Contact &amp; Offices</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading">Global Hubs</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong class="text-white d-block">London Headquarters:</strong>
+              100 Bishopsgate, London EC2N 4AG, United Kingdom
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong class="text-white d-block">New York Liaison:</strong>
+              30 Rockefeller Plaza, New York, NY 10112, United States
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <strong class="text-white d-block">Confidential Case Intake:</strong>
+              <a href="mailto:inquiries@veritasintelligence.com">inquiries@veritasintelligence.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/blog-filter.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

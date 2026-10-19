@@ -1,0 +1,330 @@
+/* ==========================================================================
+   VERITAS INTELLIGENCE — RESPONSIVE STYLESHEET (responsive.css)
+   Mobile-first breakpoint refinements: 320px, 375px, 576px, 768px, 992px, 1200px, 1440px, 1920px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Extra Small Devices (Max 575.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+  html {
+    font-size: 15px;
+  }
+
+  h1, .h1 { font-size: 2rem; }
+  h2, .h2 { font-size: 1.65rem; }
+  h3, .h3 { font-size: 1.35rem; }
+
+  .section-padding {
+    padding: 3.75rem 0;
+  }
+
+  .section-padding-sm {
+    padding: 2.75rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-corporate {
+    min-height: auto;
+    padding: 4.5rem 0 3.5rem;
+  }
+
+  .hero-corporate h1 {
+    font-size: 2.15rem;
+  }
+
+  .hero-corporate .lead {
+    font-size: 1.05rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .stat-box {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.25rem 0.5rem;
+  }
+
+  .stat-box:last-child {
+    border-bottom: none;
+  }
+
+  .stat-number {
+    font-size: 2.25rem;
+  }
+
+  .countdown-box {
+    gap: 0.65rem;
+  }
+
+  .countdown-item {
+    min-width: 70px;
+    padding: 0.85rem 0.75rem;
+  }
+
+  .countdown-value {
+    font-size: 1.75rem;
+  }
+
+  .pricing-card.is-featured {
+    transform: none;
+  }
+
+  .topbar-contact-items {
+    display: none !important;
+  }
+
+  .topbar-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-veritas {
+    padding: 0.5rem 0;
+  }
+
+  .navbar-brand-group {
+    gap: 0.45rem;
+    max-width: calc(100% - 50px);
+  }
+
+  .navbar-controls-group,
+  .navbar-controls-left {
+    gap: 0.35rem;
+  }
+
+  .btn-control-toggle {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+
+  .btn-rtl-toggle {
+    padding: 0 0.45rem;
+    font-size: 0.7rem;
+    height: 32px;
+  }
+
+  .navbar-brand img,
+  .navbar-brand-logo {
+    height: 28px !important;
+    width: auto !important;
+    max-width: 155px !important;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.1rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .badge-gold, .badge-navy, .badge {
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .hero-corporate h1,
+  .hero-asymmetric h1,
+  .page-hero h1,
+  .page-hero .display-5 {
+    font-size: 1.85rem !important;
+    line-height: 1.25 !important;
+    word-break: break-word;
+  }
+
+  .bg-surface .d-flex.align-items-center.gap-2 {
+    flex-wrap: wrap;
+  }
+}
+
+/* Extra Small Mobile (Max 375px) */
+@media (max-width: 375px) {
+  .navbar-brand-group {
+    gap: 0.3rem;
+  }
+
+  .navbar-controls-group,
+  .navbar-controls-left {
+    gap: 0.25rem;
+  }
+
+  .btn-control-toggle {
+    width: 29px;
+    height: 29px;
+    font-size: 0.78rem;
+  }
+
+  .btn-rtl-toggle {
+    padding: 0 0.35rem;
+    font-size: 0.65rem;
+    height: 29px;
+  }
+
+  .navbar-brand img,
+  .navbar-brand-logo {
+    height: 24px !important;
+    width: auto !important;
+    max-width: 130px !important;
+  }
+
+  .hero-corporate h1,
+  .hero-asymmetric h1,
+  .page-hero h1 {
+    font-size: 1.65rem !important;
+  }
+}
+
+/* Gutter restraint for small & mobile viewports to prevent horizontal overflow */
+@media (max-width: 767.98px) {
+  .row.g-4, .row.g-5, .row.gx-4, .row.gx-5 {
+    --bs-gutter-x: 1.25rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Devices (576px to 767.98px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-corporate h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-padding {
+    padding: 4.5rem 0;
+  }
+
+  .stat-box {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .stat-box:nth-child(n+3) {
+    border-bottom: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Medium Devices (Tablets, 768px to 991.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  .navbar-brand-group {
+    gap: 0.65rem;
+    max-width: calc(100% - 62px);
+  }
+
+  .navbar-brand img,
+  .navbar-brand-logo {
+    height: 38px !important;
+    width: auto !important;
+    max-width: 200px !important;
+  }
+
+  .navbar-collapse {
+    background-color: var(--dropdown-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem;
+    margin-top: 1rem;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    padding-left: 1rem;
+    background-color: transparent;
+  }
+
+  .navbar-nav-cta {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .hero-asymmetric-badge {
+    position: static;
+    margin-top: 1.25rem;
+    max-width: 100%;
+  }
+
+  .sidebar-sticky-wrap {
+    margin-top: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Large Devices (Laptops/Desktops, 992px and up)
+   -------------------------------------------------------------------------- */
+@media (min-width: 992px) {
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+    animation: fadeInMenu 0.2s ease forwards;
+  }
+
+  @keyframes fadeInMenu {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .sidebar-sticky-wrap {
+    position: sticky;
+    top: 6rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Extra Large / Wide Screens (1440px and up)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1480px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility: Reduced Motion Preference
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

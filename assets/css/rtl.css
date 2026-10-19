@@ -1,0 +1,158 @@
+/* ==========================================================================
+   VERITAS INTELLIGENCE — RIGHT-TO-LEFT STYLESHEET (rtl.css)
+   Right-to-Left bidirectional layout support (Arabic, Hebrew, Persian)
+   ========================================================================== */
+
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* --------------------------------------------------------------------------
+   Typography & Flow
+   -------------------------------------------------------------------------- */
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="rtl"] .text-start {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .text-end {
+  text-align: left !important;
+}
+
+/* --------------------------------------------------------------------------
+   Icons Flipping
+   -------------------------------------------------------------------------- */
+html[dir="rtl"] .bi-arrow-right,
+html[dir="rtl"] .bi-chevron-right,
+html[dir="rtl"] .bi-arrow-up-right,
+html[dir="rtl"] .bi-arrow-left-short {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* --------------------------------------------------------------------------
+   Navigation & Header
+   -------------------------------------------------------------------------- */
+/* Keep Theme & RTL toggle buttons strictly on the right side of the logo */
+html[dir="rtl"] .navbar-brand-group {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .navbar-controls-group,
+html[dir="rtl"] .navbar-controls-left {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .navbar-nav {
+  padding-right: 0;
+}
+
+html[dir="rtl"] .navbar-collapse {
+  text-align: right;
+}
+
+html[dir="rtl"] .dropdown-menu {
+  text-align: right;
+}
+
+html[dir="rtl"] .dropdown-item {
+  text-align: right;
+}
+
+html[dir="rtl"] .dropdown-item:hover,
+html[dir="rtl"] .dropdown-item:focus {
+  padding-inline-start: 1.15rem;
+  padding-inline-end: 0.95rem;
+}
+
+html[dir="rtl"] .nav-link::after {
+  left: 0.75rem;
+  right: 0.75rem;
+}
+
+/* --------------------------------------------------------------------------
+   Hero & Banners
+   -------------------------------------------------------------------------- */
+html[dir="rtl"] .hero-corporate::before,
+html[dir="rtl"] .page-hero::before {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.88) 48%, rgba(255, 255, 255, 0.42) 72%, rgba(255, 255, 255, 0.08) 100%);
+}
+
+html[dir="rtl"][data-bs-theme="dark"] .hero-corporate::before,
+html[dir="rtl"][data-bs-theme="dark"] .page-hero::before {
+  background: linear-gradient(270deg, rgba(4, 8, 17, 0.95) 0%, rgba(11, 19, 37, 0.88) 48%, rgba(11, 19, 37, 0.38) 72%, rgba(11, 19, 37, 0.10) 100%);
+}
+
+html[dir="rtl"] .hero-bg-img,
+html[dir="rtl"] .page-hero-img {
+  object-position: left center;
+}
+
+html[dir="rtl"] .hero-asymmetric-badge {
+  left: auto;
+  right: 2rem;
+}
+
+/* --------------------------------------------------------------------------
+   Cards & Layout Components
+   -------------------------------------------------------------------------- */
+html[dir="rtl"] .service-card-number {
+  right: auto;
+  left: 1rem;
+}
+
+html[dir="rtl"] .insight-card-badge {
+  left: auto;
+  right: 1rem;
+}
+
+html[dir="rtl"] .stat-box {
+  border-right: none;
+  border-left: 1px solid var(--border-color);
+}
+
+html[dir="rtl"] .stat-box:last-child {
+  border-left: none;
+}
+
+html[dir="rtl"] .team-card-overlay {
+  justify-content: flex-start;
+}
+
+/* --------------------------------------------------------------------------
+   Accordion
+   -------------------------------------------------------------------------- */
+html[dir="rtl"] .accordion-veritas .accordion-button {
+  text-align: right;
+}
+
+html[dir="rtl"] .accordion-veritas .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Breadcrumb
+   -------------------------------------------------------------------------- */
+html[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-right: 0;
+  padding-left: var(--bs-breadcrumb-item-padding-x);
+  transform: scaleX(-1);
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+html[dir="rtl"] .footer-heading::after {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .footer-links a:hover {
+  transform: translateX(-3px);
+}

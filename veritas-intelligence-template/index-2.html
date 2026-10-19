@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Intelligence &amp; Risk Advisory — Veritas Intelligence</title>
+  <meta name="description" content="Strategic corporate intelligence, business risk advisory, and executive threat analysis for boardrooms, investment committees, and corporate leadership.">
+  <meta name="keywords" content="corporate intelligence, business risk assessment, OSINT, executive decision-making, shareholder activism defense">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Corporate Intelligence &amp; Risk Advisory — Veritas Intelligence">
+  <meta property="og:description" content="Strategic Intelligence for Executive Governance &amp; Boardroom Resilience.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero/hero-intelligence-risk.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <!-- Immediate Theme & RTL initialization -->
+  <script>
+    (function () {
+      const theme = localStorage.getItem('itserve_theme') || localStorage.getItem('itSupportTheme') || localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-bs-theme', theme);
+    const dir = localStorage.getItem('itserve_direction') || localStorage.getItem('itSupportRTL') || 'ltr';
+    document.documentElement.setAttribute('dir', dir);
+    document.documentElement.setAttribute('lang', dir === 'rtl' ? 'ar' : 'en');
+    })();
+  </script>
+</head>
+<body>
+
+
+
+  <!-- Main Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-veritas" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar-brand-group d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.svg" data-light-src="assets/images/logo.svg" data-dark-src="assets/images/logo-light.svg" alt="Veritas Intelligence Logo" class="navbar-brand-logo" width="220" height="44">
+          </a>
+          <!-- Mobile Theme & RTL Controls (Visible ONLY when inspect / mobile view < 992px) -->
+          <div class="navbar-controls-group d-flex d-lg-none align-items-center">
+            <!-- Theme Toggle -->
+            <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <!-- RTL Toggle -->
+            <button class="btn-control-toggle btn-rtl-toggle rtl-toggle-btn" type="button" aria-label="Toggle RTL layout" title="Toggle RTL">
+              <span class="rtl-btn-text">RTL</span>
+            </button>
+          </div></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <!-- Home Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-building me-2 text-gold"></i> Corporate Investigations</a></li>
+                <li><a class="dropdown-item" href="index-2.html"><i class="bi bi-cpu me-2 text-gold"></i> Corporate Intelligence</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <!-- Services Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i> All Practice Areas</a></li>
+                <li><hr class="dropdown-divider my-1"></li>
+                <li><a class="dropdown-item" href="service-corporate-investigations.html"><i class="bi bi-search me-2 text-gold"></i> Corporate Investigations</a></li>
+                <li><a class="dropdown-item" href="service-executive-screening.html"><i class="bi bi-person-check me-2 text-gold"></i> Executive Screening</a></li>
+                <li><a class="dropdown-item" href="service-ma-due-diligence.html"><i class="bi bi-briefcase me-2 text-gold"></i> M&amp;A Due Diligence</a></li>
+                <li><a class="dropdown-item" href="service-fraud-misconduct.html"><i class="bi bi-file-earmark-lock me-2 text-gold"></i> Fraud &amp; Misconduct</a></li>
+                <li><a class="dropdown-item" href="service-vendor-risk.html"><i class="bi bi-shield-check me-2 text-gold"></i> Vendor Risk Management</a></li>
+                <li><a class="dropdown-item" href="service-corporate-intelligence.html"><i class="bi bi-cpu me-2 text-gold"></i> Corporate Intelligence</a></li>
+                <li><a class="dropdown-item" href="service-litigation-support.html"><i class="bi bi-journal-bookmark me-2 text-gold"></i> Litigation Support</a></li>
+                <li><a class="dropdown-item" href="service-asset-tracing.html"><i class="bi bi-graph-up-arrow me-2 text-gold"></i> Asset Tracing &amp; Recovery</a></li>
+                <li><a class="dropdown-item" href="service-cyber-investigations.html"><i class="bi bi-shield-lock me-2 text-gold"></i> Cyber Risk &amp; Digital Forensics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <!-- Insights / Blog Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Insights <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html"><i class="bi bi-journal-text me-2 text-gold"></i> Intelligence Briefings (Blog)</a></li>
+                <li><a class="dropdown-item" href="blog-details.html"><i class="bi bi-file-text me-2 text-gold"></i> Case Analysis (Blog Details)</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-3 navbar-nav-cta">
+            <!-- Desktop Theme & RTL Controls (Visible ONLY on desktop >= 992px, matching second image) -->
+            <div class="navbar-controls-desktop d-none d-lg-flex align-items-center gap-2">
+              <!-- Theme Toggle -->
+              <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle Theme">
+                <i class="bi bi-moon-stars-fill"></i>
+              </button>
+              <!-- RTL Toggle -->
+              <button class="btn-control-toggle btn-rtl-toggle rtl-toggle-btn" type="button" aria-label="Toggle RTL layout" title="Toggle RTL">
+                <span class="rtl-btn-text">RTL</span>
+              </button>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">
+              <i class="bi bi-lock-fill"></i> Discuss a Case
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Asymmetrical Hero Section -->
+    <section class="hero-asymmetric" aria-label="Corporate intelligence hero">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Left Column Content -->
+          <div class="col-lg-6">
+            <div class="badge-gold mb-3">
+              <i class="bi bi-cpu"></i> Executive Risk Advisory &amp; Strategic Foresight
+            </div>
+            <h1 class="display-5 fw-bold mb-3">Strategic Intelligence for Executive Governance &amp; Boardroom Resilience</h1>
+            <p class="lead text-muted mb-4">
+              Delivering verified intelligence, competitive counterparty threat vectors, and multi-jurisdictional risk telemetry to safeguard market capitalization, leadership integrity, and proprietary interests.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a href="contact.html" class="btn btn-gold btn-lg">
+                <i class="bi bi-shield-lock"></i> Request Scoping Briefing
+              </a>
+              <a href="services.html" class="btn btn-outline-white btn-lg btn-white">
+                <i class="bi bi-layers"></i> Our Practice Areas
+              </a>
+            </div>
+
+            <!-- Quick Telemetry Points -->
+            <div class="row g-3 pt-3 border-top">
+              <div class="col-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-diagram-3-fill text-gold fs-4"></i>
+                  <div>
+                    <strong class="d-block text-dark dark-text-light small">Cross-Border OSINT</strong>
+                    <span class="text-muted" style="font-size: 0.78rem;">Deep registry &amp; offshore mapping</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-people-fill text-gold fs-4"></i>
+                  <div>
+                    <strong class="d-block text-dark dark-text-light small">Discreet HUMINT</strong>
+                    <span class="text-muted" style="font-size: 0.78rem;">Ethical human source inquiries</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column Image -->
+          <div class="col-lg-6">
+            <div class="hero-asymmetric-img-wrap">
+              <img src="assets/images/hero/hero-intelligence-risk.jpg" alt="Veritas Intelligence partners conducting executive risk advisory and live situational briefing in global command suite" class="img-fluid" width="3840" height="2867">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stat Metrics Counter Section -->
+    <section class="py-5 bg-surface border-bottom" aria-label="Key statistics">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="stat-box">
+              <div class="stat-number stat-counter" data-target="18.4" data-prefix="$" data-suffix="B+" data-decimals="1">$18.4B+</div>
+              <p class="stat-label">Assets Traced &amp; Mapped</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-box">
+              <div class="stat-number stat-counter" data-target="98.4" data-suffix="%" data-decimals="1">98.4%</div>
+              <p class="stat-label">Assessment Accuracy</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-box">
+              <div class="stat-number stat-counter" data-target="450" data-suffix="+">450+</div>
+              <p class="stat-label">Sovereign &amp; PE Engagements</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-box">
+              <div class="stat-number stat-counter" data-target="24" data-prefix="&lt;" data-suffix="h">&lt;24h</div>
+              <p class="stat-label">Rapid Scoping Turnaround</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <small class="text-muted fst-italic">Note: Statistics represent illustrative engagement milestones and sample portfolio metrics.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Methodology: 4 Disciplines -->
+    <section class="section-padding" aria-label="Research methodology">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge-gold section-eyebrow">Rigorous Tradecraft</span>
+          <h2 class="section-title">The Four Intelligence Collection Disciplines</h2>
+          <p class="section-desc">
+            We integrate open sources, human networks, forensic accounting, and digital footprint telemetry into a cohesive evidentiary picture.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Discipline 1: OSINT -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card-veritas discipline-card p-4 h-100">
+              <div class="text-gold mb-3 fs-2 discipline-icon"><i class="bi bi-globe"></i></div>
+              <h3 class="h5 discipline-title">Open-Source Intelligence (OSINT)</h3>
+              <p class="small text-muted discipline-desc">
+                Exhaustive analysis of global commercial registries, offshore company formations, regulatory sanction logs, land records, and civil litigation files in 140+ sovereign jurisdictions.
+              </p>
+              <ul class="list-unstyled small discipline-list mb-0">
+                <li class="mb-2"><i class="bi bi-check text-gold me-2"></i><span>UBO Unwrapping</span></li>
+                <li><i class="bi bi-check text-gold me-2"></i><span>Multi-language Registry Data</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Discipline 2: HUMINT -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card-veritas discipline-card p-4 h-100">
+              <div class="text-gold mb-3 fs-2 discipline-icon"><i class="bi bi-people"></i></div>
+              <h3 class="h5 discipline-title">Human Source Intelligence (HUMINT)</h3>
+              <p class="small text-muted discipline-desc">
+                Discreet, lawful on-the-ground source elicitation. We interview former executives, key industry suppliers, and commercial counterparties to gather qualitative operational ground truth.
+              </p>
+              <ul class="list-unstyled small discipline-list mb-0">
+                <li class="mb-2"><i class="bi bi-check text-gold me-2"></i><span>Reputation Auditing</span></li>
+                <li><i class="bi bi-check text-gold me-2"></i><span>Ethical Elicitation Standards</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Discipline 3: Forensic Financials -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card-veritas discipline-card p-4 h-100">
+              <div class="text-gold mb-3 fs-2 discipline-icon"><i class="bi bi-cash-stack"></i></div>
+              <h3 class="h5 discipline-title">Forensic Financials &amp; Flow Analysis</h3>
+              <p class="small text-muted discipline-desc">
+                Reconstruction of irregular fund flows, related-party round-tripping, unrecorded loan guarantees, and structured dissipation of capital across opaque intermediary bank accounts.
+              </p>
+              <ul class="list-unstyled small discipline-list mb-0">
+                <li class="mb-2"><i class="bi bi-check text-gold me-2"></i><span>Asset Tracing &amp; Freeze Support</span></li>
+                <li><i class="bi bi-check text-gold me-2"></i><span>Discrepancy Reconstruction</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Discipline 4: Cyber & Digital Footprint -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card-veritas discipline-card p-4 h-100">
+              <div class="text-gold mb-3 fs-2 discipline-icon"><i class="bi bi-shield-slash"></i></div>
+              <h3 class="h5 discipline-title">Digital Footprint &amp; Cyber Telemetry</h3>
+              <p class="small text-muted discipline-desc">
+                Assessment of executive exposure surfaces, dark-web credential leaks, domain spoofing, and electronic vector vulnerabilities that expose organizations to extortion or espionage.
+              </p>
+              <ul class="list-unstyled small discipline-list mb-0">
+                <li class="mb-2"><i class="bi bi-check text-gold me-2"></i><span>Leak &amp; Breach Analysis</span></li>
+                <li><i class="bi bi-check text-gold me-2"></i><span>Executive Digital Hardening</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Risk Assessment & Due Diligence Practice Matrix -->
+    <section class="section-padding bg-surface border-top border-bottom" aria-label="Risk assessment practice">
+      <div class="container">
+        <div class="row align-items-center g-5 mb-5">
+          <div class="col-lg-6">
+            <span class="badge-gold mb-3">Strategic Advisory</span>
+            <h2 class="section-title">Pre-Emptive Risk Assessment for High-Stakes Deals</h2>
+            <p class="text-muted">
+              Entering emerging markets or executing high-valuation acquisitions requires more than standard audit figures. We uncover political exposure, regulatory landmines, and undisclosed commercial litigation.
+            </p>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a href="contact.html" class="btn btn-navy">
+              <i class="bi bi-file-earmark-lock me-2"></i> Schedule Private Partner Debrief
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1: Sanctions & Export Control -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-veritas service-card h-100 position-relative">
+              <div class="service-card-img-wrap">
+                <a href="service-sanctions-export-control.html" aria-label="Sanctions &amp; Export Control">
+                  <img src="assets/images/services/service-sanctions-export-control.jpg" alt="Sanctions compliance dossier with maritime routing diagram and dual-use export control files" class="service-card-img" width="3840" height="2160" loading="lazy">
+                </a>
+              </div>
+              <div class="service-card-body">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge bg-secondary-subtle text-secondary small">OFAC / EU / UK Frameworks</span>
+                  <i class="bi bi-shield-exclamation text-gold fs-5"></i>
+                </div>
+                <h3 class="service-card-title">
+                  <a href="service-sanctions-export-control.html" class="text-reset text-decoration-none stretched-link">Sanctions &amp; Export Control</a>
+                </h3>
+                <p class="service-card-desc">
+                  Verification of direct and indirect shareholding tiers against global sanctions databases, blocked entity lists, and dual-use export restriction lists.
+                </p>
+                <div class="service-card-footer">
+                  <span class="small fw-bold text-gold">Review Scope <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Hostile Bid & Activism Defense -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-veritas service-card h-100 position-relative">
+              <div class="service-card-img-wrap">
+                <a href="service-hostile-bid-activism.html" aria-label="Hostile Bid &amp; Activism Defense">
+                  <img src="assets/images/services/service-hostile-bid-activism.jpg" alt="Hostile takeover defense strategy binder and shareholder stake accumulation charts on boardroom table" class="service-card-img" width="3840" height="2160" loading="lazy">
+                </a>
+              </div>
+              <div class="service-card-body">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge bg-secondary-subtle text-secondary small">Shareholder Telemetry</span>
+                  <i class="bi bi-building-lock text-gold fs-5"></i>
+                </div>
+                <h3 class="service-card-title">
+                  <a href="service-hostile-bid-activism.html" class="text-reset text-decoration-none stretched-link">Hostile Bid &amp; Activism Defense</a>
+                </h3>
+                <p class="service-card-desc">
+                  Intelligence profiling of activist funds, derivative stakes, undisclosed alliances, and historical litigation track records targeting public corporations.
+                </p>
+                <div class="service-card-footer">
+                  <span class="small fw-bold text-gold">Review Scope <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Critical Supply Chain Vetting -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-veritas service-card h-100 position-relative">
+              <div class="service-card-img-wrap">
+                <a href="service-supply-chain-vetting.html" aria-label="Critical Supply Chain Vetting">
+                  <img src="assets/images/services/service-supply-chain-vetting.jpg" alt="Global supply chain monitoring center with trade volume telemetry and vendor risk screens" class="service-card-img" width="3840" height="2160" loading="lazy">
+                </a>
+              </div>
+              <div class="service-card-body">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge bg-secondary-subtle text-secondary small">Tier-1 to Tier-3 Vendors</span>
+                  <i class="bi bi-link-45deg text-gold fs-5"></i>
+                </div>
+                <h3 class="service-card-title">
+                  <a href="service-supply-chain-vetting.html" class="text-reset text-decoration-none stretched-link">Critical Supply Chain Vetting</a>
+                </h3>
+                <p class="service-card-desc">
+                  Scrutiny of critical suppliers in volatile geopolitical regions to ensure compliance with human rights mandates, environmental rules, and integrity laws.
+                </p>
+                <div class="service-card-footer">
+                  <span class="small fw-bold text-gold">Review Scope <i class="bi bi-arrow-right ms-1"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industry Risk Focus Section -->
+    <section class="section-padding" aria-label="Sector specialization">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="badge-gold section-eyebrow">Sector Focus</span>
+          <h2 class="section-title">Navigating Industry-Specific Vulnerabilities</h2>
+          <p class="section-desc">
+            Tailored investigative protocols reflecting the distinct regulatory regimes, asset classes, and risk profiles of high-consequence industries.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="sector-focus-card">
+              <div class="sector-focus-img-wrap">
+                <img src="assets/images/sectors/sector-fintech.jpg" alt="Architectural neoclassical banking facade and financial institution headquarters representing Banking and FinTech due diligence" class="sector-focus-img" width="3840" height="2160" loading="lazy" />
+              </div>
+              <div class="sector-focus-body">
+                <i class="bi bi-wallet2 sector-focus-icon" aria-hidden="true"></i>
+                <h3 class="sector-focus-title">Banking &amp; FinTech</h3>
+                <p class="sector-focus-desc">Enhanced due diligence on non-traditional funding channels, crypto custody entities, and high-risk correspondent accounts.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="sector-focus-card">
+              <div class="sector-focus-img-wrap">
+                <img src="assets/images/sectors/sector-energy.jpg" alt="Deepwater offshore energy platform at sunset representing Energy and Infrastructure risk vetting" class="sector-focus-img" width="3840" height="2160" loading="lazy" />
+              </div>
+              <div class="sector-focus-body">
+                <i class="bi bi-lightning-charge sector-focus-icon" aria-hidden="true"></i>
+                <h3 class="sector-focus-title">Energy &amp; Infrastructure</h3>
+                <p class="sector-focus-desc">Joint venture partner vetting, concession integrity verification, and sovereign wealth counterparty scoping.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="sector-focus-card">
+              <div class="sector-focus-img-wrap">
+                <img src="assets/images/sectors/sector-pharma.jpg" alt="Laboratory glassware and pharmaceutical vials representing Life Sciences and Pharma intelligence" class="sector-focus-img" width="3840" height="2160" loading="lazy" />
+              </div>
+              <div class="sector-focus-body">
+                <i class="bi bi-capsule sector-focus-icon" aria-hidden="true"></i>
+                <h3 class="sector-focus-title">Life Sciences &amp; Pharma</h3>
+                <p class="sector-focus-desc">Clinical trial integrity auditing, patent ownership litigation intelligence, and distributor anti-bribery monitoring.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="sector-focus-card">
+              <div class="sector-focus-img-wrap">
+                <img src="assets/images/sectors/sector-aerospace.jpg" alt="F-22 Raptor stealth fighter jet with afterburners climbing representing Aerospace and Defense security intelligence" class="sector-focus-img" width="3840" height="2160" loading="lazy" />
+              </div>
+              <div class="sector-focus-body">
+                <i class="bi bi-airplane sector-focus-icon" aria-hidden="true"></i>
+                <h3 class="sector-focus-title">Aerospace &amp; Defense</h3>
+                <p class="sector-focus-desc">Subcontractor security clearances, technology transfer counter-espionage, and ITAR compliance intelligence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intelligence Scoping Spotlight Card -->
+    <section class="section-padding-sm bg-surface border-top" aria-label="Direct briefing intake">
+      <div class="container">
+        <div class="cta-spotlight-card">
+          <div class="row align-items-stretch g-4 g-lg-5">
+            <div class="col-lg-6">
+              <div class="cta-spotlight-content">
+                <span class="cta-pill-badge mb-3"><i class="bi bi-cpu-fill"></i> Confidential Intelligence Intake</span>
+                <h2 class="cta-spotlight-title mb-3">Secure Senior-Level Scoping for Your Firm</h2>
+                <p class="cta-spotlight-desc mb-4">
+                  Engagements are initiated directly with our practice partners. We provide prompt feasibility assessment, jurisdictional roadmap, and clear deliverables.
+                </p>
+                <div class="cta-spotlight-metrics mb-4">
+                  <div class="cta-metric-item">
+                    <span class="cta-metric-label">Coverage Reach</span>
+                    <strong class="cta-metric-value">140+ Sovereign Jurisdictions</strong>
+                  </div>
+                  <div class="cta-metric-item">
+                    <span class="cta-metric-label">Feasibility Scope</span>
+                    <strong class="cta-metric-value">Delivered Within 24h</strong>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="contact.html" class="btn btn-gold btn-lg">
+                    <i class="bi bi-envelope-check-fill"></i> Initiate Direct Briefing
+                  </a>
+                  <a href="pricing.html" class="btn btn-outline-white btn-lg btn-white">
+                    <i class="bi bi-calculator"></i> View Engagement Models
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 cta-spotlight-img-col">
+              <div class="cta-spotlight-img-wrap">
+                <img src="assets/images/banners/banner-risk-briefing.jpg" alt="Veritas Intelligence directors and forensic investigators conducting confidential crisis risk briefing and live counterparty threat telemetry" class="cta-spotlight-img" width="3840" height="2867" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Insights Articles -->
+    <section class="section-padding" aria-label="Recent intelligence publications">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-5">
+          <div>
+            <span class="badge-gold section-eyebrow">Intelligence Publications</span>
+            <h2 class="section-title mb-0">Strategic Risk Insights</h2>
+          </div>
+          <a href="blog.html" class="btn btn-outline-navy">View All Articles &rarr;</a>
+        </div>
+
+        <div class="row g-4">
+          <!-- Article 4 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-veritas insight-card position-relative">
+              <div class="insight-card-img-wrap">
+                <a href="blog-details-sanctions.html" aria-label="Navigating Secondary Sanctions &amp; Third-Party Vendor Risk in 2026">
+                  <img src="assets/images/blog/home2-briefing-sanctions.jpg" alt="Commercial international container vessel berthed at logistics terminal port cranes for maritime sanctions compliance monitoring" class="insight-card-img" width="3840" height="2160" loading="lazy">
+                </a>
+                <span class="insight-card-badge">Sanctions Risk</span>
+              </div>
+              <div class="insight-card-body">
+                <div class="insight-meta">
+                  <span><i class="bi bi-calendar3 me-1"></i> July 2026</span>
+                  <span><i class="bi bi-clock me-1"></i> 5 min read</span>
+                </div>
+                <h3 class="insight-card-title">
+                  <a href="blog-details-sanctions.html" class="stretched-link">Navigating Secondary Sanctions &amp; Third-Party Vendor Risk in 2026</a>
+                </h3>
+                <p class="insight-card-desc">
+                  How multinational compliance officers can identify concealed intermediary ownership in transshipment hubs and avoid catastrophic regulatory penalties.
+                </p>
+                <div class="insight-card-footer">
+                  <span class="text-muted small">By Amira Khalil</span>
+                  <a href="blog-details-sanctions.html" class="read-briefing-btn text-decoration-none">Read &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 5 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-veritas insight-card position-relative">
+              <div class="insight-card-img-wrap">
+                <a href="blog-details-osint-litigation.html" aria-label="The Role of Open-Source Intelligence in High-Stakes Commercial Litigation">
+                  <img src="assets/images/blog/home2-briefing-osint.jpg" alt="Multi-screen cyber intelligence operations room displaying open-source telemetry and digital litigation evidence monitors" class="insight-card-img" width="3840" height="2160" loading="lazy">
+                </a>
+                <span class="insight-card-badge">Litigation Support</span>
+              </div>
+              <div class="insight-card-body">
+                <div class="insight-meta">
+                  <span><i class="bi bi-calendar3 me-1"></i> June 2026</span>
+                  <span><i class="bi bi-clock me-1"></i> 9 min read</span>
+                </div>
+                <h3 class="insight-card-title">
+                  <a href="blog-details-osint-litigation.html" class="stretched-link">The Role of Open-Source Intelligence in High-Stakes Commercial Litigation</a>
+                </h3>
+                <p class="insight-card-desc">
+                  Transforming publicly available registry fragments, digital footprints, and geospatial breadcrumbs into defensible, court-admissible trial evidence.
+                </p>
+                <div class="insight-card-footer">
+                  <span class="text-muted small">By Sophia Chen</span>
+                  <a href="blog-details-osint-litigation.html" class="read-briefing-btn text-decoration-none">Read &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 6 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card-veritas insight-card position-relative">
+              <div class="insight-card-img-wrap">
+                <a href="blog-details-asset-recovery.html" aria-label="Tracing Dissipated Sovereign &amp; Corporate Assets Across Multi-Jurisdictional Hubs">
+                  <img src="assets/images/blog/home2-briefing-asset-recovery.jpg" alt="Supreme Court judicial chambers and high courtroom bench for cross-border freezing injunction enforcement" class="insight-card-img" width="3840" height="2160" loading="lazy">
+                </a>
+                <span class="insight-card-badge">Asset Tracing</span>
+              </div>
+              <div class="insight-card-body">
+                <div class="insight-meta">
+                  <span><i class="bi bi-calendar3 me-1"></i> May 2026</span>
+                  <span><i class="bi bi-clock me-1"></i> 8 min read</span>
+                </div>
+                <h3 class="insight-card-title">
+                  <a href="blog-details-asset-recovery.html" class="stretched-link">Tracing Dissipated Sovereign &amp; Corporate Assets Across Multi-Jurisdictional Hubs</a>
+                </h3>
+                <p class="insight-card-desc">
+                  Practical steps for identifying real estate, maritime vessels, and nominee trusts across multi-jurisdictional financial centers and enforcing freezing orders.
+                </p>
+                <div class="insight-card-footer">
+                  <span class="text-muted small">By Julian Sterling</span>
+                  <a href="blog-details-asset-recovery.html" class="read-briefing-btn text-decoration-none">Read &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer-veritas" aria-label="Global footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="navbar-brand footer-brand d-inline-block mb-3" aria-label="Veritas Intelligence Home">
+            <img src="assets/images/logo.svg" data-light-src="assets/images/logo.svg" data-dark-src="assets/images/logo-light.svg" alt="Veritas Intelligence Logo" class="navbar-brand-logo footer-brand-logo" width="220" height="44">
+          </a>
+          <p class="footer-brand-desc">
+            Veritas Intelligence provides strategic corporate intelligence, risk forensics, and due diligence advisory to corporate boards, private equity leaders, and legal counsel worldwide.
+          </p>
+          <div class="d-flex gap-2">
+            <span class="badge bg-dark border border-secondary text-light small"><i class="bi bi-shield-check text-gold"></i> ISO 27001 Certified Protocols</span>
+          </div>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="LinkedIn" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="X (formerly Twitter)" title="X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="YouTube" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="mailto:inquiries@veritasintelligence.com" class="btn-social" aria-label="Confidential Email" title="Confidential Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Practice Areas -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Practice Areas</h4>
+          <ul class="footer-links">
+            <li><a href="service-corporate-investigations.html">Corporate Investigations</a></li>
+            <li><a href="service-executive-screening.html">Executive Screening</a></li>
+            <li><a href="service-ma-due-diligence.html">M&amp;A Due Diligence</a></li>
+            <li><a href="service-fraud-misconduct.html">Fraud &amp; Forensics</a></li>
+            <li><a href="service-vendor-risk.html">Vendor Risk Management</a></li>
+            <li><a href="service-corporate-intelligence.html">Corporate Intelligence</a></li>
+            <li><a href="service-litigation-support.html">Litigation Support</a></li>
+            <li><a href="service-asset-tracing.html">Asset Tracing</a></li>
+            <li><a href="service-cyber-investigations.html">Cyber Forensics</a></li>
+            <li><a href="services.html">All Practice Areas</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company & Governance -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Veritas</a></li>
+            <li><a href="about.html#team">Leadership Team</a></li>
+            <li><a href="about.html#methodology">Our Methodology</a></li>
+            <li><a href="pricing.html">Engagement Models</a></li>
+            <li><a href="blog.html">Intelligence Briefings</a></li>
+            <li><a href="contact.html">Contact &amp; Offices</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Operations & Contact -->
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading">Global Hubs</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong class="text-white d-block">London Headquarters:</strong>
+              100 Bishopsgate, London EC2N 4AG, United Kingdom
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong class="text-white d-block">Singapore Regional Hub:</strong>
+              10 Collyer Quay, Ocean Financial Centre, Singapore 049315
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <strong class="text-white d-block">Confidential Case Intake:</strong>
+              <a href="mailto:inquiries@veritasintelligence.com">inquiries@veritasintelligence.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/blog-filter.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

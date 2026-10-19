@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uncovering Hidden Beneficial Ownership in Complex Offshore Vehicles — Veritas Intelligence</title>
+  <meta name="description" content="A comprehensive forensic methodology for identifying ultimate beneficial owners behind layered offshore holding structures, nominee arrangements, and bearer instruments.">
+  <meta name="keywords" content="beneficial ownership tracing, UBO unmasking, offshore entity investigation, nominee directors, forensic corporate intelligence">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Uncovering Hidden Beneficial Ownership in Complex Offshore Vehicles">
+  <meta property="og:description" content="A forensic protocol for unwrapping ultimate beneficial owners behind offshore holding companies.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="assets/images/blog/blog-detail-featured.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <script>
+    (function () {
+      const theme = localStorage.getItem('itserve_theme') || localStorage.getItem('itSupportTheme') || localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-bs-theme', theme);
+    const dir = localStorage.getItem('itserve_direction') || localStorage.getItem('itSupportRTL') || 'ltr';
+    document.documentElement.setAttribute('dir', dir);
+    document.documentElement.setAttribute('lang', dir === 'rtl' ? 'ar' : 'en');
+    })();
+  </script>
+</head>
+<body>
+
+
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-veritas" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar-brand-group d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.svg" data-light-src="assets/images/logo.svg" data-dark-src="assets/images/logo-light.svg" alt="Veritas Intelligence Logo" class="navbar-brand-logo" width="220" height="44">
+          </a>
+          <!-- Mobile Theme & RTL Controls (Visible ONLY when inspect / mobile view < 992px) -->
+          <div class="navbar-controls-group d-flex d-lg-none align-items-center">
+            <!-- Theme Toggle -->
+            <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <!-- RTL Toggle -->
+            <button class="btn-control-toggle btn-rtl-toggle rtl-toggle-btn" type="button" aria-label="Toggle RTL layout" title="Toggle RTL">
+              <span class="rtl-btn-text">RTL</span>
+            </button>
+          </div></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-building me-2 text-gold"></i> Corporate Investigations</a></li>
+                <li><a class="dropdown-item" href="index-2.html"><i class="bi bi-cpu me-2 text-gold"></i> Corporate Intelligence</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i> All Practice Areas</a></li>
+                <li><hr class="dropdown-divider my-1"></li>
+                <li><a class="dropdown-item" href="service-corporate-investigations.html"><i class="bi bi-search me-2 text-gold"></i> Corporate Investigations</a></li>
+                <li><a class="dropdown-item" href="service-executive-screening.html"><i class="bi bi-person-check me-2 text-gold"></i> Executive Screening</a></li>
+                <li><a class="dropdown-item" href="service-ma-due-diligence.html"><i class="bi bi-briefcase me-2 text-gold"></i> M&amp;A Due Diligence</a></li>
+                <li><a class="dropdown-item" href="service-fraud-misconduct.html"><i class="bi bi-file-earmark-lock me-2 text-gold"></i> Fraud &amp; Misconduct</a></li>
+                <li><a class="dropdown-item" href="service-vendor-risk.html"><i class="bi bi-shield-check me-2 text-gold"></i> Vendor Risk Management</a></li>
+                <li><a class="dropdown-item" href="service-corporate-intelligence.html"><i class="bi bi-cpu me-2 text-gold"></i> Corporate Intelligence</a></li>
+                <li><a class="dropdown-item" href="service-litigation-support.html"><i class="bi bi-journal-bookmark me-2 text-gold"></i> Litigation Support</a></li>
+                <li><a class="dropdown-item" href="service-asset-tracing.html"><i class="bi bi-graph-up-arrow me-2 text-gold"></i> Asset Tracing &amp; Recovery</a></li>
+                <li><a class="dropdown-item" href="service-cyber-investigations.html"><i class="bi bi-shield-lock me-2 text-gold"></i> Cyber Risk &amp; Digital Forensics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Insights <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html"><i class="bi bi-journal-text me-2 text-gold"></i> Intelligence Briefings (Blog)</a></li>
+                <li><a class="dropdown-item active" href="blog-details.html"><i class="bi bi-file-text me-2 text-gold"></i> Case Analysis (Blog Details)</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-3 navbar-nav-cta">
+            <!-- Desktop Theme & RTL Controls (Visible ONLY on desktop >= 992px, matching second image) -->
+            <div class="navbar-controls-desktop d-none d-lg-flex align-items-center gap-2">
+              <!-- Theme Toggle -->
+              <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle Theme">
+                <i class="bi bi-moon-stars-fill"></i>
+              </button>
+              <!-- RTL Toggle -->
+              <button class="btn-control-toggle btn-rtl-toggle rtl-toggle-btn" type="button" aria-label="Toggle RTL layout" title="Toggle RTL">
+                <span class="rtl-btn-text">RTL</span>
+              </button>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">
+              <i class="bi bi-lock-fill"></i> Discuss a Case
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Article Header Hero -->
+    <section class="page-hero" aria-label="Article header">
+      <img src="assets/images/hero/hero-blog-details.jpg" alt="Director of Forensic Intelligence analyzing complex offshore beneficial ownership structures and corporate registry networks" class="page-hero-img" width="3840" height="2160">
+      <div class="container page-hero-content">
+        <span class="badge-gold mb-3">Due Diligence Protocol</span>
+        <h1 class="display-5 fw-bold mb-3">Uncovering Hidden Beneficial Ownership in Complex Offshore Vehicles</h1>
+        <div class="d-flex flex-wrap align-items-center gap-3 text-light text-opacity-75 small mb-0">
+          <span><i class="bi bi-person-fill text-gold me-1"></i> Elena Rostova, Director of Forensic Intelligence</span>
+          <span>&bull;</span>
+          <span><i class="bi bi-calendar3 text-gold me-1"></i> October 2026</span>
+          <span>&bull;</span>
+          <span><i class="bi bi-clock text-gold me-1"></i> 6 min read</span>
+          <span>&bull;</span>
+          <span class="badge bg-secondary-subtle text-secondary">FCPA &amp; UBO Practice</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content & Sidebar -->
+    <section class="section-padding" aria-label="Article content">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Main Editorial Body (Left 8 cols) -->
+          <article class="col-lg-8">
+            <!-- Featured Photographic Asset -->
+            <div class="mb-4">
+              <img src="assets/images/blog/blog-detail-featured.jpg" alt="Complex corporate beneficial ownership network visualization and offshore entity mapping diagram" class="img-fluid rounded border shadow-sm w-100" width="3840" height="2160">
+              <small class="text-muted d-block mt-2 fst-italic">Analytical representation of multi-jurisdictional shell corporate nodes and nominee ownership layers.</small>
+            </div>
+
+            <!-- Lead Paragraph -->
+            <p class="lead text-secondary">
+              Corporate opacity is rarely an accident. In cross-border mergers, private equity buyouts, and high-value sovereign transactions, opaque entity layering is deliberately engineered to mask the identity of sanctioned oligarchs, politically exposed persons (PEPs), or executives diverting corporate assets.
+            </p>
+
+            <p class="text-muted">
+              While open-source registry searches frequently stop at the first tier of nominee directors in jurisdictions like the British Virgin Islands, Cyprus, or Delaware, sophisticated forensic investigations require a multi-disciplinary protocol combining deep registry extraction, litigation docket cross-referencing, and targeted human source verification.
+            </p>
+
+            <!-- Table of Contents -->
+            <div class="p-4 bg-surface border rounded my-4">
+              <h3 class="h6 text-uppercase tracking-wider text-gold mb-3"><i class="bi bi-list-nested me-2"></i> Table of Contents</h3>
+              <ol class="small text-muted mb-0 ps-3">
+                <li class="mb-1"><a href="#section-layering" class="text-decoration-none text-secondary">1. The Anatomy of Layered Nominee Structures</a></li>
+                <li class="mb-1"><a href="#section-telemetry" class="text-decoration-none text-secondary">2. Digital Registry Telemetry &amp; Document Gaps</a></li>
+                <li class="mb-1"><a href="#section-financial" class="text-decoration-none text-secondary">3. Financial Forensics: Tracking Economic Substance</a></li>
+                <li class="mb-1"><a href="#section-matrix" class="text-decoration-none text-secondary">4. Defensible Evidentiary Standards for General Counsel</a></li>
+              </ol>
+            </div>
+
+            <!-- Section 1 -->
+            <h2 class="h4 mt-5 mb-3" id="section-layering">1. The Anatomy of Layered Nominee Structures</h2>
+            <p class="text-muted">
+              In a typical multi-tier concealment architecture, the acquiring party encounters an operating company owned by a holding company incorporated in a mid-shore jurisdiction, which in turn is held by a trust or foundation in an offshore financial center. Nominee directors—often local corporate services providers—appear on official public certificates of incumbency.
+            </p>
+            <p class="text-muted">
+              However, the true beneficial owner exercises control through side agreements, powers of attorney, or unrecorded call options that never appear in standard commercial registry gazettes. Unraveling this requires cross-jurisdictional tracing:
+            </p>
+
+            <!-- Key Takeaways Callout Box -->
+            <div class="p-4 bg-surface border-start border-gold border-4 rounded my-4">
+              <h3 class="h5 mb-2"><i class="bi bi-lightbulb text-gold me-2"></i> Strategic Takeaway for Deal Counsel</h3>
+              <p class="small text-muted mb-0">
+                A clean Certificate of Good Standing from a corporate registry proves only that statutory franchise fees have been paid. It does not establish beneficial ownership or confirm the absence of undisclosed pledge agreements, freezing injunctions, or regulatory sanctions.
+              </p>
+            </div>
+
+            <!-- Section 2 -->
+            <h2 class="h4 mt-5 mb-3" id="section-telemetry">2. Digital Registry Telemetry &amp; Document Gaps</h2>
+            <p class="text-muted">
+              Modern corporate investigators examine not only what the filing contains, but what is conspicuously absent. Missing annual returns, frequent changes in registered agents, shared nominee addresses with known high-risk entities, and sudden corporate reorganizations preceding transactions are prime indicators of obfuscation.
+            </p>
+            <p class="text-muted">
+              By cross-referencing digitized trademark registries, maritime vessel documentation, patent filings, and local land titling deeds across different jurisdictions, investigators frequently locate the signature or personal address of the beneficial principal where it was inadvertently recorded.
+            </p>
+
+            <!-- Expert Blockquote -->
+            <blockquote class="p-4 bg-surface border rounded my-4 fst-italic text-secondary">
+              “The principal always leaves an economic footprint. Whether through the bank providing letters of credit, the foreign property holding company, or personal guarantees signed for operational leases, true ownership inevitably reveals itself to rigorous cross-border scrutiny.”
+              <footer class="blockquote-footer mt-2 text-gold small">Elena Rostova, Veritas Intelligence Partner</footer>
+            </blockquote>
+
+            <!-- Section 3 -->
+            <h2 class="h4 mt-5 mb-3" id="section-financial">3. Financial Forensics: Tracking Economic Substance</h2>
+            <p class="text-muted">
+              When public paper trails hit dead ends in opaque jurisdictions, forensic accounting principles provide the breakthrough. By examining the flow of management fees, licensing royalties, and intercompany loans, investigators identify who ultimately benefits from company dividend streams.
+            </p>
+            
+            <!-- Comparison Table for Forensic Flags -->
+            <div class="table-responsive my-4 border rounded">
+              <table class="table table-hover mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th>Red Flag Indicator</th>
+                    <th>Nominee Justification</th>
+                    <th>Forensic Investigation Reality</th>
+                  </tr>
+                </thead>
+                <tbody class="small">
+                  <tr>
+                    <td><strong>Sole Corporate Director in Tax Haven</strong></td>
+                    <td>“Administrative efficiency”</td>
+                    <td>Acts on instructions under hidden general power of attorney.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Circular Intercompany Licensing</strong></td>
+                    <td>“Intellectual property optimization”</td>
+                    <td>Siphoning operating profits to an undisclosed principal trust.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Frequent Registered Agent Switching</strong></td>
+                    <td>“Service fee dispute”</td>
+                    <td>Evasion of enhanced AML/KYC customer due diligence demands.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Section 4 -->
+            <h2 class="h4 mt-5 mb-3" id="section-matrix">4. Defensible Evidentiary Standards for General Counsel</h2>
+            <p class="text-muted">
+              For investigative findings to provide genuine commercial utility, they must be legally admissible and capable of supporting indemnification claims, deal renegotiation, or mandatory disclosures under international anti-bribery regulations.
+            </p>
+            <p class="text-muted">
+              At Veritas Intelligence, our deliverables provide an unassailable evidentiary audit trail: certified registry photocopies, documented interview logs, date-stamped open-source archives, and a definitive Red Flag Heatmap detailing probability and legal exposure.
+            </p>
+
+            <!-- Social Share Bar -->
+            <div class="p-3 bg-surface border rounded mt-5 d-flex flex-wrap justify-content-between align-items-center gap-3">
+              <div class="d-flex align-items-center gap-2">
+                <span class="small fw-bold text-muted">Share Briefing:</span>
+                <a href="#" class="btn btn-sm btn-outline-secondary" onclick="alert('Demo: Link copied to clipboard'); return false;"><i class="bi bi-link-45deg"></i> Copy Link</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary" onclick="alert('Demo: LinkedIn share dialog'); return false;"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary" onclick="alert('Demo: Email share intent'); return false;"><i class="bi bi-envelope"></i> Email</a>
+              </div>
+              <div class="small text-muted">
+                Document Reference: #BRIEF-2026-UBO
+              </div>
+            </div>
+
+            <!-- Author Bio Card -->
+            <div class="p-4 bg-surface border rounded mt-4">
+              <div class="d-flex align-items-center gap-3">
+                <img src="assets/images/blog/author-elena-rostova.jpg" alt="Elena Rostova, Director of Forensic Intelligence" class="rounded-circle border" width="72" height="72" style="object-fit: cover;">
+                <div>
+                  <h3 class="h5 mb-1">About Elena Rostova</h3>
+                  <div class="small text-gold mb-1">Director of Forensic Financial Intelligence, Zurich</div>
+                  <p class="small text-muted mb-0">
+                    Elena has over 18 years of experience leading cross-border forensic accounting inquiries, beneficial ownership investigations, and asset tracing matters across Western Europe and Central Asia.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sidebar (Right 4 cols) -->
+          <aside class="col-lg-4" aria-label="Sidebar">
+            <div class="sidebar-sticky-wrap">
+              <!-- Contact Inquiry Callout -->
+              <div class="card-veritas p-4 mb-4">
+                <span class="badge-gold mb-2">Practice Advisory</span>
+                <h3 class="h5 mb-2">Consult on a Similar Inquiry</h3>
+                <p class="small text-muted mb-3">
+                  Have an ongoing transaction or dispute requiring beneficial ownership verification? Speak with our practice team.
+                </p>
+                <a href="contact.html" class="btn btn-gold btn-sm w-100">
+                  <i class="bi bi-shield-lock-fill me-1"></i> Request Confidential Consultation
+                </a>
+              </div>
+
+              <!-- Related Insights -->
+              <div class="card-veritas p-4 mb-4">
+                <h3 class="h6 text-uppercase tracking-wider mb-3">Related Briefings</h3>
+                <div class="mb-3 pb-3 border-bottom">
+                  <span class="badge bg-secondary-subtle text-secondary small mb-1">Risk Advisory</span>
+                  <h4 class="h6 mb-1"><a href="blog-details-ma-diligence.html" class="text-decoration-none text-dark dark-text-light">Red Flags in Cross-Border M&amp;A Diligence</a></h4>
+                  <small class="text-muted">September 2026 &bull; 8 min read</small>
+                </div>
+                <div class="mb-3 pb-3 border-bottom">
+                  <span class="badge bg-secondary-subtle text-secondary small mb-1">Investigations</span>
+                  <h4 class="h6 mb-1"><a href="blog-details-whistleblower.html" class="text-decoration-none text-dark dark-text-light">Conducting Defensible Internal Investigations</a></h4>
+                  <small class="text-muted">August 2026 &bull; 7 min read</small>
+                </div>
+                <div>
+                  <span class="badge bg-secondary-subtle text-secondary small mb-1">Compliance</span>
+                  <h4 class="h6 mb-1"><a href="blog-details-sanctions.html" class="text-decoration-none text-dark dark-text-light">Navigating Secondary Sanctions in 2026</a></h4>
+                  <small class="text-muted">July 2026 &bull; 5 min read</small>
+                </div>
+              </div>
+
+              <!-- Topic Tags -->
+              <div class="card-veritas p-4">
+                <h3 class="h6 text-uppercase tracking-wider mb-3">Practice Tags</h3>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-surface border text-secondary">#UBO</span>
+                  <span class="badge bg-surface border text-secondary">#Offshore</span>
+                  <span class="badge bg-surface border text-secondary">#FCPA</span>
+                  <span class="badge bg-surface border text-secondary">#DueDiligence</span>
+                  <span class="badge bg-surface border text-secondary">#NomineeDirectors</span>
+                  <span class="badge bg-surface border text-secondary">#Sanctions</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBO Case Briefing Spotlight Card -->
+    <section class="section-padding-sm bg-surface border-top" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-spotlight-card">
+          <div class="row align-items-stretch g-4 g-lg-5">
+            <div class="col-lg-6">
+              <div class="cta-spotlight-content">
+                <span class="cta-pill-badge mb-3"><i class="bi bi-journal-bookmark-fill"></i> Case Briefing Engagement</span>
+                <h2 class="cta-spotlight-title mb-3">Need to Commission a UBO Investigation?</h2>
+                <p class="cta-spotlight-desc mb-4">
+                  Our forensic intelligence teams initiate preliminary registry mapping within 24 hours of mutual non-disclosure execution to identify beneficial ownership.
+                </p>
+                <div class="cta-spotlight-metrics mb-4">
+                  <div class="cta-metric-item">
+                    <span class="cta-metric-label">Investigation Method</span>
+                    <strong class="cta-metric-value">OSINT, HUMINT &amp; Docket Tracing</strong>
+                  </div>
+                  <div class="cta-metric-item">
+                    <span class="cta-metric-label">Confidentiality</span>
+                    <strong class="cta-metric-value">Cryptographic File Delivery</strong>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="contact.html" class="btn btn-gold btn-lg">
+                    <i class="bi bi-chat-text-fill"></i> Initiate Scoping Call
+                  </a>
+                  <a href="services.html" class="btn btn-outline-white btn-lg btn-white">
+                    <i class="bi bi-layers"></i> View All Practice Areas
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 cta-spotlight-img-col">
+              <div class="cta-spotlight-img-wrap">
+                <img src="assets/images/banners/banner-blog-cta.jpg" alt="Veritas Intelligence forensic intelligence analysts conducting preliminary corporate registry mapping and docket tracing for beneficial ownership investigation" class="cta-spotlight-img" width="3840" height="2867" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer-veritas" aria-label="Global footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="navbar-brand footer-brand d-inline-block mb-3" aria-label="Veritas Intelligence Home">
+            <img src="assets/images/logo.svg" data-light-src="assets/images/logo.svg" data-dark-src="assets/images/logo-light.svg" alt="Veritas Intelligence Logo" class="navbar-brand-logo footer-brand-logo" width="220" height="44">
+          </a>
+          <p class="footer-brand-desc">
+            Veritas Intelligence is an international corporate investigation, forensic intelligence, and due diligence consultancy advising corporate leadership, boards of directors, and global legal counsel.
+          </p>
+          <div class="d-flex gap-2">
+            <span class="badge bg-dark border border-secondary text-light small"><i class="bi bi-shield-check text-gold"></i> ISO 27001 Certified Protocols</span>
+          </div>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="LinkedIn" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="X (formerly Twitter)" title="X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="YouTube" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="mailto:inquiries@veritasintelligence.com" class="btn-social" aria-label="Confidential Email" title="Confidential Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Practice Areas</h4>
+          <ul class="footer-links">
+            <li><a href="service-corporate-investigations.html">Corporate Investigations</a></li>
+            <li><a href="service-executive-screening.html">Executive Screening</a></li>
+            <li><a href="service-ma-due-diligence.html">M&amp;A Due Diligence</a></li>
+            <li><a href="service-fraud-misconduct.html">Fraud &amp; Forensics</a></li>
+            <li><a href="service-vendor-risk.html">Vendor Risk Management</a></li>
+            <li><a href="service-corporate-intelligence.html">Corporate Intelligence</a></li>
+            <li><a href="service-litigation-support.html">Litigation Support</a></li>
+            <li><a href="service-asset-tracing.html">Asset Tracing</a></li>
+            <li><a href="service-cyber-investigations.html">Cyber Forensics</a></li>
+            <li><a href="services.html">All Practice Areas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Veritas</a></li>
+            <li><a href="about.html#team">Leadership Team</a></li>
+            <li><a href="about.html#methodology">Our Methodology</a></li>
+            <li><a href="pricing.html">Engagement Models</a></li>
+            <li><a href="blog.html">Intelligence Briefings</a></li>
+            <li><a href="contact.html">Contact &amp; Offices</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading">Global Hubs</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong class="text-white d-block">London Headquarters:</strong>
+              100 Bishopsgate, London EC2N 4AG, United Kingdom
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong class="text-white d-block">New York Liaison:</strong>
+              30 Rockefeller Plaza, New York, NY 10112, United States
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <strong class="text-white d-block">Confidential Case Intake:</strong>
+              <a href="mailto:inquiries@veritasintelligence.com">inquiries@veritasintelligence.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/blog-filter.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

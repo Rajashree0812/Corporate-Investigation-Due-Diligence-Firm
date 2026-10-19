@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Flags in Cross-Border M&amp;A: Beyond Standard Financial Audits — Veritas Intelligence</title>
+  <meta name="description" content="A comprehensive forensic corporate intelligence protocol for identifying politically exposed persons, sanction vulnerabilities, and off-balance obligations in cross-border acquisitions.">
+  <meta name="keywords" content="cross-border M&amp;A due diligence, corporate intelligence, PEP identification, sanctions risk, off-balance liabilities, material adverse change">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Red Flags in Cross-Border M&amp;A: Beyond Standard Financial Audits">
+  <meta property="og:description" content="Why traditional accounting audits miss critical geopolitical and regulatory exposures in international corporate transactions.">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="assets/images/blog/blog-detail-featured-ma.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <script>
+    (function () {
+      const theme = localStorage.getItem('itserve_theme') || localStorage.getItem('itSupportTheme') || localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-bs-theme', theme);
+    const dir = localStorage.getItem('itserve_direction') || localStorage.getItem('itSupportRTL') || 'ltr';
+    document.documentElement.setAttribute('dir', dir);
+    document.documentElement.setAttribute('lang', dir === 'rtl' ? 'ar' : 'en');
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-veritas" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar-brand-group d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.svg" data-light-src="assets/images/logo.svg" data-dark-src="assets/images/logo-light.svg" alt="Veritas Intelligence Logo" class="navbar-brand-logo" width="220" height="44">
+          </a>
+          <!-- Mobile Theme & RTL Controls (Visible ONLY when inspect / mobile view < 992px) -->
+          <div class="navbar-controls-group d-flex d-lg-none align-items-center">
+            <!-- Theme Toggle -->
+            <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle Theme">
+              <i class="bi bi-moon-stars-fill"></i>
+            </button>
+            <!-- RTL Toggle -->
+            <button class="btn-control-toggle btn-rtl-toggle rtl-toggle-btn" type="button" aria-label="Toggle RTL layout" title="Toggle RTL">
+              <span class="rtl-btn-text">RTL</span>
+            </button>
+          </div></div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-building me-2 text-gold"></i> Corporate Investigations</a></li>
+                <li><a class="dropdown-item" href="index-2.html"><i class="bi bi-cpu me-2 text-gold"></i> Corporate Intelligence</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"><i class="bi bi-grid-3x3-gap me-2 text-gold"></i> All Practice Areas</a></li>
+                <li><hr class="dropdown-divider my-1"></li>
+                <li><a class="dropdown-item" href="service-corporate-investigations.html"><i class="bi bi-search me-2 text-gold"></i> Corporate Investigations</a></li>
+                <li><a class="dropdown-item" href="service-executive-screening.html"><i class="bi bi-person-check me-2 text-gold"></i> Executive Screening</a></li>
+                <li><a class="dropdown-item" href="service-ma-due-diligence.html"><i class="bi bi-briefcase me-2 text-gold"></i> M&amp;A Due Diligence</a></li>
+                <li><a class="dropdown-item" href="service-fraud-misconduct.html"><i class="bi bi-file-earmark-lock me-2 text-gold"></i> Fraud &amp; Misconduct</a></li>
+                <li><a class="dropdown-item" href="service-vendor-risk.html"><i class="bi bi-shield-check me-2 text-gold"></i> Vendor Risk Management</a></li>
+                <li><a class="dropdown-item" href="service-corporate-intelligence.html"><i class="bi bi-cpu me-2 text-gold"></i> Corporate Intelligence</a></li>
+                <li><a class="dropdown-item" href="service-litigation-support.html"><i class="bi bi-journal-bookmark me-2 text-gold"></i> Litigation Support</a></li>
+                <li><a class="dropdown-item" href="service-asset-tracing.html"><i class="bi bi-graph-up-arrow me-2 text-gold"></i> Asset Tracing &amp; Recovery</a></li>
+                <li><a class="dropdown-item" href="service-cyber-investigations.html"><i class="bi bi-shield-lock me-2 text-gold"></i> Cyber Risk &amp; Digital Forensics</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Insights <i class="bi bi-chevron-down nav-chevron"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html"><i class="bi bi-journal-text me-2 text-gold"></i> Intelligence Briefings (Blog)</a></li>
+                <li><a class="dropdown-item active" href="blog-details.html"><i class="bi bi-file-text me-2 text-gold"></i> Case Analysis (Blog Details)</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-3 navbar-nav-cta">
+            <!-- Desktop Theme & RTL Controls (Visible ONLY on desktop >= 992px, matching second image) -->
+            <div class="navbar-controls-desktop d-none d-lg-flex align-items-center gap-2">
+              <!-- Theme Toggle -->
+              <button class="btn-control-toggle theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle Theme">
+                <i class="bi bi-moon-stars-fill"></i>
+              </button>
+              <!-- RTL Toggle -->
+              <button class="btn-control-toggle btn-rtl-toggle rtl-toggle-btn" type="button" aria-label="Toggle RTL layout" title="Toggle RTL">
+                <span class="rtl-btn-text">RTL</span>
+              </button>
+            </div>
+            <a href="contact.html" class="btn btn-gold btn-sm">
+              <i class="bi bi-lock-fill"></i> Discuss a Case
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Article Header Hero -->
+    <section class="page-hero" aria-label="Article header">
+      <img src="assets/images/hero/hero-blog-details-ma.jpg" alt="Executive transaction advisory and cross-border merger due diligence intelligence suite overlooking international banking towers" class="page-hero-img" width="3840" height="2160">
+      <div class="container page-hero-content">
+        <span class="badge-gold mb-3">Risk Advisory &amp; Pre-Acquisition Intelligence</span>
+        <h1 class="display-5 fw-bold mb-3">Red Flags in Cross-Border M&amp;A: Beyond Standard Financial Audits</h1>
+        <div class="d-flex flex-wrap align-items-center gap-3 text-light text-opacity-75 small mb-0">
+          <span><i class="bi bi-person-fill text-gold me-1"></i> Marcus Vance, Managing Director &ndash; Transaction Advisory</span>
+          <span>&bull;</span>
+          <span><i class="bi bi-calendar3 text-gold me-1"></i> September 2026</span>
+          <span>&bull;</span>
+          <span><i class="bi bi-clock text-gold me-1"></i> 8 min read</span>
+          <span>&bull;</span>
+          <span class="badge bg-secondary-subtle text-secondary">M&amp;A Advisory Practice</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Content & Sidebar -->
+    <section class="section-padding" aria-label="Article content">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Main Editorial Body (Left 8 cols) -->
+          <article class="col-lg-8">
+            <!-- Featured Photographic Asset -->
+            <div class="mb-4">
+              <img src="assets/images/blog/blog-detail-featured-ma.jpg" alt="Executed cross-border transaction contract documents and disclosure schedules undergoing forensic legal due diligence" class="img-fluid rounded border shadow-sm w-100" width="3840" height="2160">
+              <small class="text-muted d-block mt-2 fst-italic">Cross-border transaction purchase agreements, disclosure schedules, and indemnity covenants undergoing forensic verification.</small>
+            </div>
+
+            <!-- Lead Paragraph -->
+            <p class="lead text-secondary">
+              Standard accounting audits verify whether the books balance; they cannot determine whether the counterparty is fundamentally trustworthy. In high-value international mergers and acquisitions, billions in enterprise value are destroyed not by mathematical spreadsheet errors, but by concealed political exposure, regulatory landmines, and undisclosed beneficial arrangements that never appear in traditional virtual data rooms.
+            </p>
+
+            <p class="text-muted">
+              As cross-border capital flows face heightened scrutiny under foreign direct investment (FDI) regimes, the Foreign Corrupt Practices Act (FCPA), and expanding multilateral sanctions, acquiring boards require investigative due diligence that probes behind audited figures into real-world reputation, state affiliations, and operational substance.
+            </p>
+
+            <!-- Table of Contents -->
+            <div class="p-4 bg-surface border rounded my-4">
+              <h3 class="h6 text-uppercase tracking-wider text-gold mb-3"><i class="bi bi-list-nested me-2"></i> Table of Contents</h3>
+              <ol class="small text-muted mb-0 ps-3">
+                <li class="mb-1"><a href="#section-blindspots" class="text-decoration-none text-secondary">1. The Blind Spots of Conventional Accounting Audits</a></li>
+                <li class="mb-1"><a href="#section-pep" class="text-decoration-none text-secondary">2. PEP Networks, State Influence &amp; Concealed Intermediaries</a></li>
+                <li class="mb-1"><a href="#section-liabilities" class="text-decoration-none text-secondary">3. Off-Balance Sheet Liabilities &amp; Encumbered Assets</a></li>
+                <li class="mb-1"><a href="#section-remedies" class="text-decoration-none text-secondary">4. Defensible Deal Structuring &amp; Material Adverse Change (MAC) Protection</a></li>
+              </ol>
+            </div>
+
+            <!-- Section 1 -->
+            <h2 class="h4 mt-5 mb-3" id="section-blindspots">1. The Blind Spots of Conventional Accounting Audits</h2>
+            <p class="text-muted">
+              Virtual data rooms (VDRs) are meticulously curated environments. Sellers provide cleanly formatted general ledgers, audited EBITDA reconciliations, and polished customer retention metrics. However, traditional accounting due diligence operates under the assumption of good-faith documentation.
+            </p>
+            <p class="text-muted">
+              When an acquisition target operates in emerging markets or heavily regulated sectors, significant value risks reside entirely outside ledger entries. These include informal side agreements with municipal regulators, customer relationships dependent upon illegal kickbacks, and undisclosed vendor disputes that erupt into crippling litigation the moment ownership transfers.
+            </p>
+
+            <!-- Key Takeaways Callout Box -->
+            <div class="p-4 bg-surface border-start border-gold border-4 rounded my-4">
+              <h3 class="h5 mb-2"><i class="bi bi-lightbulb text-gold me-2"></i> Strategic Takeaway for Investment Committees</h3>
+              <p class="small text-muted mb-0">
+                A clean unqualified auditor's opinion verifies that the past twelve months of financial statements comply with GAAP or IFRS. It offers zero legal indemnity against successor liability for unprosecuted anti-bribery violations or concealed joint-venture encumbrances.
+              </p>
+            </div>
+
+            <!-- Section 2 -->
+            <h2 class="h4 mt-5 mb-3" id="section-pep">2. PEP Networks, State Influence &amp; Concealed Intermediaries</h2>
+            <p class="text-muted">
+              One of the most catastrophic risks in cross-border acquisitions is acquiring an entity whose commercial revenue relies upon undisclosed relationships with Politically Exposed Persons (PEPs) or state-owned enterprises. When target leadership utilizes third-party sales agents in foreign jurisdictions, commercial success may actually reflect bribery or influence-peddling.
+            </p>
+            <p class="text-muted">
+              Veritas Intelligence deploys human intelligence networks (HUMINT) and multi-jurisdictional registry indexing to interrogate the true ownership of target agents, joint-venture partners, and regional sub-distributors. Uncovering family relationships between company founders and licensing ministers provides acquirers the leverage required to restructure or terminate flawed transactions prior to signing.
+            </p>
+
+            <!-- Expert Blockquote -->
+            <blockquote class="p-4 bg-surface border rounded my-4 fst-italic text-secondary">
+              “Due diligence is not a compliance checklist; it is an exercise in asymmetric risk discovery. The liabilities that derail corporate transactions are almost never on the balance sheet—they exist in off-market arrangements, sovereign friction, and shadow affiliations.”
+              <footer class="blockquote-footer mt-2 text-gold small">Marcus Vance, Managing Director &ndash; Transaction Advisory</footer>
+            </blockquote>
+
+            <!-- Section 3 -->
+            <h2 class="h4 mt-5 mb-3" id="section-liabilities">3. Off-Balance Sheet Liabilities &amp; Encumbered Assets</h2>
+            <p class="text-muted">
+              Target management frequently attempts to conceal material legal disputes by shifting claims into offshore arbitration proceedings, entering into unrecorded shareholder put options, or pledging core operating assets as collateral for informal family-office credit facilities.
+            </p>
+            <p class="text-muted">
+              Through investigative docket review spanning offshore corporate registries, regional court dockets, and international trade gazettes, Veritas identifies whether intellectual property, operating facilities, or equity shares are subject to secret pledges or pending asset freezes.
+            </p>
+
+            <!-- Comparison Table -->
+            <div class="table-responsive my-4 border rounded">
+              <table class="table table-hover mb-0">
+                <thead class="table-light">
+                  <tr>
+                    <th>Transaction Element</th>
+                    <th>Standard Accounting Audit</th>
+                    <th>Veritas Forensic Intelligence</th>
+                  </tr>
+                </thead>
+                <tbody class="small">
+                  <tr>
+                    <td><strong>Customer Concentration</strong></td>
+                    <td>Validates signed revenue contracts and payment history.</td>
+                    <td>Investigates beneficial ownership of top buyers to detect circular sales schemes or politically dependent concessions.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Executive Integrity</strong></td>
+                    <td>Standard public record and resume confirmation.</td>
+                    <td>Deep source debriefs, adversarial litigation history, undisclosed offshore holdings, and personal regulatory sanctions check.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Regulatory Standing</strong></td>
+                    <td>Reviews official compliance certificates and tax clearance letters.</td>
+                    <td>Sub-surface inquiry into pending whistleblowers, quiet governmental investigations, and bribery allegations.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Supply Chain Integrity</strong></td>
+                    <td>Inspects tier-1 supplier vendor master files and invoices.</td>
+                    <td>Traces tier-2 and tier-3 component vendors against OFAC, EU dual-use lists, and forced-labor enforcement trackers.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Section 4 -->
+            <h2 class="h4 mt-5 mb-3" id="section-remedies">4. Defensible Deal Structuring &amp; Material Adverse Change (MAC) Protection</h2>
+            <p class="text-muted">
+              When forensic intelligence identifies red flags early in the deal lifecycle, acquirers gain multiple strategic options rather than simply walking away. Defensible investigative evidence enables deal counsel to negotiate targeted price reductions, escrow holdbacks, or specific indemnity covenants protecting against historical liability.
+            </p>
+            <p class="text-muted">
+              Furthermore, should critical red flags emerge between signing and closing, our certified investigative findings furnish corporate boards with the evidentiary foundation necessary to invoke Material Adverse Change (MAC) clauses or terminate agreements without incurring breakup fees.
+            </p>
+
+            <!-- Social Share Bar -->
+            <div class="p-3 bg-surface border rounded mt-5 d-flex flex-wrap justify-content-between align-items-center gap-3">
+              <div class="d-flex align-items-center gap-2">
+                <span class="small fw-bold text-muted">Share Briefing:</span>
+                <a href="#" class="btn btn-sm btn-outline-secondary" onclick="alert('Demo: Link copied to clipboard'); return false;"><i class="bi bi-link-45deg"></i> Copy Link</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary" onclick="alert('Demo: LinkedIn share dialog'); return false;"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary" onclick="alert('Demo: Email share intent'); return false;"><i class="bi bi-envelope"></i> Email</a>
+              </div>
+              <div class="small text-muted">
+                Document Reference: #BRIEF-2026-MA-RED
+              </div>
+            </div>
+
+            <!-- Author Bio Card -->
+            <div class="p-4 bg-surface border rounded mt-4">
+              <div class="d-flex align-items-center gap-3">
+                <img src="assets/images/blog/author-marcus-vance.jpg" alt="Marcus Vance, Managing Director – Transaction Advisory" class="rounded-circle border" width="72" height="72" style="object-fit: cover;">
+                <div>
+                  <h3 class="h5 mb-1">About Marcus Vance</h3>
+                  <div class="small text-gold mb-1">Managing Director &ndash; Transaction Advisory &amp; Due Diligence, London</div>
+                  <p class="small text-muted mb-0">
+                    Marcus has spent more than two decades directing pre-acquisition corporate intelligence and integrity due diligence for premier private equity funds, sovereign wealth institutions, and international commercial law firms across EMEA and the Americas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sidebar (Right 4 cols) -->
+          <aside class="col-lg-4" aria-label="Sidebar">
+            <div class="sidebar-sticky-wrap">
+              <!-- Contact Inquiry Callout -->
+              <div class="card-veritas p-4 mb-4">
+                <span class="badge-gold mb-2">Practice Advisory</span>
+                <h3 class="h5 mb-2">Consult on Pre-Acquisition Diligence</h3>
+                <p class="small text-muted mb-3">
+                  Evaluating a cross-border acquisition, minority stake, or merger with undisclosed counterparty risk? Speak confidentially with our deal practice.
+                </p>
+                <a href="contact.html" class="btn btn-gold btn-sm w-100">
+                  <i class="bi bi-shield-lock-fill me-1"></i> Request Confidential Consultation
+                </a>
+              </div>
+
+              <!-- Related Insights -->
+              <div class="card-veritas p-4 mb-4">
+                <h3 class="h6 text-uppercase tracking-wider mb-3">Related Briefings</h3>
+                <div class="mb-3 pb-3 border-bottom">
+                  <span class="badge bg-secondary-subtle text-secondary small mb-1">Due Diligence</span>
+                  <h4 class="h6 mb-1"><a href="blog-details.html" class="text-decoration-none text-dark dark-text-light">Uncovering Hidden Beneficial Ownership in Complex Offshore Vehicles</a></h4>
+                  <small class="text-muted">October 2026 &bull; 6 min read</small>
+                </div>
+                <div class="mb-3 pb-3 border-bottom">
+                  <span class="badge bg-secondary-subtle text-secondary small mb-1">Investigations</span>
+                  <h4 class="h6 mb-1"><a href="blog-details-whistleblower.html" class="text-decoration-none text-dark dark-text-light">Conducting Defensible Internal Investigations Under Whistleblower Protections</a></h4>
+                  <small class="text-muted">August 2026 &bull; 7 min read</small>
+                </div>
+                <div>
+                  <span class="badge bg-secondary-subtle text-secondary small mb-1">Compliance</span>
+                  <h4 class="h6 mb-1"><a href="blog-details-sanctions.html" class="text-decoration-none text-dark dark-text-light">Navigating Secondary Sanctions &amp; Third-Party Risk</a></h4>
+                  <small class="text-muted">July 2026 &bull; 5 min read</small>
+                </div>
+              </div>
+
+              <!-- Topic Tags -->
+              <div class="card-veritas p-4">
+                <h3 class="h6 text-uppercase tracking-wider mb-3">Practice Tags</h3>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge bg-surface border text-secondary">#MergersAndAcquisitions</span>
+                  <span class="badge bg-surface border text-secondary">#RiskAdvisory</span>
+                  <span class="badge bg-surface border text-secondary">#DueDiligence</span>
+                  <span class="badge bg-surface border text-secondary">#PEPRisk</span>
+                  <span class="badge bg-surface border text-secondary">#SanctionsScreening</span>
+                  <span class="badge bg-surface border text-secondary">#TransactionForensics</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- M&A Due Diligence Spotlight Card -->
+    <section class="section-padding-sm bg-surface border-top" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-spotlight-card">
+          <div class="row align-items-stretch g-4 g-lg-5">
+            <div class="col-lg-6">
+              <div class="cta-spotlight-content">
+                <span class="cta-pill-badge mb-3"><i class="bi bi-briefcase-fill"></i> Pre-Acquisition Intelligence Engagement</span>
+                <h2 class="cta-spotlight-title mb-3">Commission Rapid-Response Transaction Diligence</h2>
+                <p class="cta-spotlight-desc mb-4">
+                  Deploy senior corporate intelligence operatives to uncover off-balance sheet liabilities, beneficial controllers, and regulatory friction within tight transaction timetables.
+                </p>
+                <div class="cta-spotlight-metrics mb-4">
+                  <div class="cta-metric-item">
+                    <span class="cta-metric-label">Deployment Window</span>
+                    <strong class="cta-metric-value">24&ndash;48 Hours Post-Mandate</strong>
+                  </div>
+                  <div class="cta-metric-item">
+                    <span class="cta-metric-label">Privilege Standard</span>
+                    <strong class="cta-metric-value">Attorney Work-Product Defensible</strong>
+                  </div>
+                </div>
+                <div class="d-flex flex-wrap gap-3">
+                  <a href="contact.html" class="btn btn-gold btn-lg">
+                    <i class="bi bi-chat-text-fill"></i> Initiate Scoping Call
+                  </a>
+                  <a href="service-ma-due-diligence.html" class="btn btn-outline-white btn-lg btn-white">
+                    <i class="bi bi-briefcase"></i> Explore M&amp;A Practice
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 cta-spotlight-img-col">
+              <div class="cta-spotlight-img-wrap">
+                <img src="assets/images/banners/banner-blog-details-ma.jpg" alt="Executive financial intelligence dashboard and cross-border merger valuation analytics on workstation for transaction due diligence review" class="cta-spotlight-img" width="3840" height="2160" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="footer-veritas" aria-label="Global footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="navbar-brand footer-brand d-inline-block mb-3" aria-label="Veritas Intelligence Home">
+            <img src="assets/images/logo.svg" data-light-src="assets/images/logo.svg" data-dark-src="assets/images/logo-light.svg" alt="Veritas Intelligence Logo" class="navbar-brand-logo footer-brand-logo" width="220" height="44">
+          </a>
+          <p class="footer-brand-desc">
+            Veritas Intelligence is an international corporate investigation, forensic intelligence, and due diligence consultancy advising corporate leadership, boards of directors, and global legal counsel.
+          </p>
+          <div class="d-flex gap-2">
+            <span class="badge bg-dark border border-secondary text-light small"><i class="bi bi-shield-check text-gold"></i> ISO 27001 Certified Protocols</span>
+          </div>
+          <div class="footer-social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="LinkedIn" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="X (formerly Twitter)" title="X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-social" aria-label="YouTube" title="YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+            <a href="mailto:inquiries@veritasintelligence.com" class="btn-social" aria-label="Confidential Email" title="Confidential Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Practice Areas</h4>
+          <ul class="footer-links">
+            <li><a href="service-corporate-investigations.html">Corporate Investigations</a></li>
+            <li><a href="service-executive-screening.html">Executive Screening</a></li>
+            <li><a href="service-ma-due-diligence.html">M&amp;A Due Diligence</a></li>
+            <li><a href="service-fraud-misconduct.html">Fraud &amp; Forensics</a></li>
+            <li><a href="service-vendor-risk.html">Vendor Risk Management</a></li>
+            <li><a href="service-corporate-intelligence.html">Corporate Intelligence</a></li>
+            <li><a href="service-litigation-support.html">Litigation Support</a></li>
+            <li><a href="service-asset-tracing.html">Asset Tracing</a></li>
+            <li><a href="service-cyber-investigations.html">Cyber Forensics</a></li>
+            <li><a href="services.html">All Practice Areas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Veritas</a></li>
+            <li><a href="about.html#team">Leadership Team</a></li>
+            <li><a href="about.html#methodology">Our Methodology</a></li>
+            <li><a href="pricing.html">Engagement Models</a></li>
+            <li><a href="blog.html">Intelligence Briefings</a></li>
+            <li><a href="contact.html">Contact &amp; Offices</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer-heading">Global Hubs</h4>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong class="text-white d-block">London Headquarters:</strong>
+              100 Bishopsgate, London EC2N 4AG, United Kingdom
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div>
+              <strong class="text-white d-block">New York Liaison:</strong>
+              30 Rockefeller Plaza, New York, NY 10112, United States
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+              <strong class="text-white d-block">Confidential Case Intake:</strong>
+              <a href="mailto:inquiries@veritasintelligence.com">inquiries@veritasintelligence.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/blog-filter.js"></script>
+  <script src="assets/js/form-validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
