@@ -52,6 +52,9 @@
           e.preventDefault();
           categoryButtons.forEach(b => b.classList.remove('active'));
           this.classList.add('active');
+          if (typeof this.scrollIntoView === 'function') {
+            this.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          }
           activeCategory = (this.getAttribute('data-filter') || 'all').toLowerCase();
           filterArticles();
         });
@@ -73,8 +76,14 @@
           activeSearchTerm = '';
           activeCategory = 'all';
           categoryButtons.forEach(b => {
-            if (b.getAttribute('data-filter') === 'all') b.classList.add('active');
-            else b.classList.remove('active');
+            if (b.getAttribute('data-filter') === 'all') {
+              b.classList.add('active');
+              if (typeof b.scrollIntoView === 'function') {
+                b.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+              }
+            } else {
+              b.classList.remove('active');
+            }
           });
           filterArticles();
         });
@@ -91,6 +100,9 @@
           e.preventDefault();
           serviceFilterBtns.forEach(b => b.classList.remove('active'));
           this.classList.add('active');
+          if (typeof this.scrollIntoView === 'function') {
+            this.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          }
 
           const filterCategory = (this.getAttribute('data-filter') || 'all').toLowerCase();
 
@@ -105,5 +117,33 @@
         });
       });
     }
+
+    // 3. Smooth Mouse-Drag Support for Filter Pill Containers (DevTools inspect & desktop)
+    const scrollContainers = document.querySelectorAll('.filter-pills-scroll');
+    scrollContainers.forEach(container => {
+      let isDown = false;
+      let startX = 0;
+      let scrollLeft = 0;
+
+      container.addEventListener('mousedown', function (e) {
+        // Only trigger on primary mouse click
+        if (e.button !== 0) return;
+        isDown = true;
+        startX = e.pageX - container.offsetLeft;
+        scrollLeft = container.scrollLeft;
+      });
+
+      window.addEventListener('mouseup', function () {
+        isDown = false;
+      });
+
+      container.addEventListener('mousemove', function (e) {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - container.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        container.scrollLeft = scrollLeft - walk;
+      });
+    });
   });
 })();
