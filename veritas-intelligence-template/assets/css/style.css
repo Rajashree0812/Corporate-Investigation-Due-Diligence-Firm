@@ -1167,9 +1167,42 @@ img {
 .hero-asymmetric {
   position: relative;
   background-color: var(--bg-secondary);
-  padding: 6rem 0 5rem;
+  padding: 3.5rem 0 3rem;
   overflow: hidden;
   border-bottom: 1px solid var(--border-color);
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-asymmetric {
+    padding: 2.25rem 0 2rem !important;
+  }
+  .hero-asymmetric h1 {
+    font-size: 2.35rem !important;
+    line-height: 1.25 !important;
+  }
+  .hero-asymmetric-img-wrap {
+    aspect-ratio: 4 / 3 !important;
+    max-height: 400px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-asymmetric {
+    padding: 2rem 0 1.5rem !important;
+  }
+  .hero-asymmetric h1 {
+    font-size: 2.15rem !important;
+    line-height: 1.25 !important;
+  }
+  .hero-asymmetric .lead {
+    font-size: 1rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+  .hero-asymmetric-img-wrap {
+    aspect-ratio: 16 / 10 !important;
+    max-height: 380px !important;
+    margin-top: 1.5rem !important;
+  }
 }
 
 .hero-asymmetric-img-wrap {
@@ -1185,7 +1218,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 20%;
   display: block;
 }
 
@@ -2647,7 +2680,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center 15%;
   display: block;
   transition: transform var(--transition-slow);
 }
@@ -2658,16 +2691,40 @@ img {
 
 @media (max-width: 991.98px) {
   .cta-spotlight-card {
-    padding: 2rem 1.5rem;
+    padding: 2.25rem 1.75rem;
     border-radius: 20px;
   }
   .cta-spotlight-title {
     font-size: 1.75rem;
   }
   .cta-spotlight-img-wrap {
-    min-height: 280px;
-    height: 280px;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    min-height: 380px;
+    max-height: 480px;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+  .cta-spotlight-img {
+    object-position: center 12%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cta-spotlight-card {
+    padding: 1.75rem 1.25rem;
+  }
+  .cta-spotlight-img-wrap {
+    min-height: 240px;
+    max-height: 320px;
+    aspect-ratio: 16 / 10;
     margin-top: 1.25rem;
+  }
+  .cta-spotlight-img {
+    object-position: center 10%;
   }
 }
 
@@ -3357,8 +3414,8 @@ img {
   font-weight: 600 !important;
 }
 
-/* Tablet & Mobile Sticky Position & Scroll Pill Bar */
-@media (max-width: 991.98px) {
+/* Tablet & Mobile Sticky Position & Scroll Pill Bar (covers all tablets up to 1199.98px) */
+@media (max-width: 1199.98px) {
   .filter-sticky-bar {
     top: 54px !important;
     padding-top: 0.65rem !important;
@@ -3397,6 +3454,7 @@ img {
     flex: 0 0 auto !important;
     font-size: 0.8125rem !important;
     padding: 0.38rem 0.92rem !important;
+    white-space: nowrap !important;
   }
 }
 
@@ -3410,6 +3468,64 @@ img {
   .filter-pills-scroll .btn {
     font-size: 0.775rem !important;
     padding: 0.34rem 0.85rem !important;
+  }
+}
+
+/* Tablet Card Grid Equalization & Alignment (768px - 1199.98px) */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .service-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+  }
+  .service-card-title {
+    min-height: 3.75rem !important;
+  }
+  .service-card-desc {
+    min-height: 5.25rem !important;
+  }
+  .service-card-features {
+    min-height: 4.5rem !important;
+  }
+  .service-card-footer {
+    margin-top: auto !important;
+  }
+  
+  .insight-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+  }
+  .insight-card-title {
+    min-height: 4.65rem !important;
+  }
+  .insight-card-desc {
+    min-height: 4rem !important;
+  }
+  .insight-card-footer {
+    margin-top: auto !important;
+  }
+
+  .pricing-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+  }
+  .pricing-tier-desc {
+    min-height: 3.25rem !important;
+  }
+  .pricing-features-list {
+    flex-grow: 1 !important;
+  }
+
+  .team-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+  }
+  .team-card-bio {
+    min-height: 4.5rem !important;
+    flex-grow: 1 !important;
   }
 }
 
