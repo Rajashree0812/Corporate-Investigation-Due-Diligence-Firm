@@ -42,6 +42,10 @@ html[dir="rtl"] .navbar-brand-group {
   flex-direction: row-reverse;
 }
 
+html[dir="rtl"] .navbar-header-actions {
+  flex-direction: row-reverse;
+}
+
 html[dir="rtl"] .navbar-controls-group,
 html[dir="rtl"] .navbar-controls-left {
   flex-direction: row-reverse;

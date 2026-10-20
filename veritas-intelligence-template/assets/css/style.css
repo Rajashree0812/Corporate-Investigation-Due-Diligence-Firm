@@ -711,11 +711,11 @@ img {
   justify-content: space-between;
 }
 
-.navbar-brand-group {
+.navbar-header-actions {
   display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
-  min-width: 0;
+  gap: 0.45rem;
+  flex-shrink: 0;
 }
 
 .navbar-controls-group,
@@ -758,15 +758,12 @@ img {
   .navbar-brand-logo {
     height: 30px;
     max-height: 30px;
-    max-width: 155px;
+    max-width: 160px;
     width: auto;
     object-fit: contain;
   }
-  .navbar-brand-group {
-    gap: 0.5rem;
-  }
-  .navbar-controls-group {
-    gap: 0.35rem;
+  .navbar-header-actions {
+    gap: 0.4rem;
   }
   .btn-control-toggle {
     width: 32px;
@@ -832,14 +829,11 @@ img {
   .navbar-brand-logo {
     height: 26px;
     max-height: 26px;
-    max-width: clamp(100px, 30vw, 135px);
+    max-width: clamp(100px, 32vw, 140px);
     width: auto;
   }
-  .navbar-brand-group {
-    gap: 0.35rem;
-  }
-  .navbar-controls-group {
-    gap: 0.25rem;
+  .navbar-header-actions {
+    gap: 0.28rem;
   }
   .btn-control-toggle {
     width: 29px;
@@ -853,6 +847,33 @@ img {
   .navbar-toggler {
     padding: 0.2rem 0.4rem;
     font-size: 1rem;
+  }
+}
+
+/* Extra small mobile (< 360px down to 320px) */
+@media (max-width: 359.98px) {
+  .navbar-brand img,
+  .navbar-brand-logo {
+    height: 24px;
+    max-height: 24px;
+    max-width: 105px;
+    width: auto;
+  }
+  .navbar-header-actions {
+    gap: 0.2rem;
+  }
+  .btn-control-toggle {
+    width: 28px;
+    height: 28px;
+    font-size: 0.68rem;
+    padding: 0 2px;
+  }
+  .btn-rtl-toggle {
+    min-width: 32px;
+  }
+  .navbar-toggler {
+    padding: 0.18rem 0.35rem;
+    font-size: 0.95rem;
   }
 }
 
